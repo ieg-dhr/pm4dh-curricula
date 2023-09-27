@@ -1,7 +1,9 @@
 # pm4dh-curricula
 Dieses Repository enthält die Daten der Untersuchung zu Projektmanagement in Digital Humanities Handbüchern und Studiengängen.
 
-Zugehörige Veröffentlichung: <code>Cremer, Fabian; Swantje Dogunke u. Thorsten Wübbena: Projektmanagement in den Digital Humanities? Eine Spurensuche in Handbüchern und Curricula, in: „Projekt Management und Digital Humanities. Zur klugen Gestaltung der Zusammenarbeit“, hg. v. Fabian Cremer, Swantje Dogunke, Anna Maria Neubert u. Thorsten Wübbena, Bielefeld University Press, Bielefeld 2023, [https://doi.org/10.14361/9783839469675](https://doi.org/10.14361/9783839469675).</code>
+Zitierfähige Veröffentlichung des Datensatzes: [tbd]
+
+Zugehörige Publikation: <code>Cremer, Fabian; Swantje Dogunke u. Thorsten Wübbena: Projektmanagement in den Digital Humanities? Eine Spurensuche in Handbüchern und Curricula, in: „Projekt Management und Digital Humanities. Zur klugen Gestaltung der Zusammenarbeit“, hg. v. Fabian Cremer, Swantje Dogunke, Anna Maria Neubert u. Thorsten Wübbena, Bielefeld University Press, Bielefeld 2023, [https://doi.org/10.14361/9783839469675](https://doi.org/10.14361/9783839469675).</code>
 
 ## Datensatz Studie 1: Handbücher der DH
 - Bibliografische Liste der Handbücher (txt) [pm4dh-curricula-st1-handbuecher.txt](pm4dh-curricula-st1-handbuecher.txt)
