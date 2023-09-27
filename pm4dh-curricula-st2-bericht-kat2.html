@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Zotero-Bericht</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg=="/>
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_CAXF6P8Y" class="item document">
+			<h2>Modulhandbuch für das Studienfach Digital Humanities (1-Fach-Master)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Würzburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:16:05</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:54:43</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_CIX3JZFD">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAXF6P8Y%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAXF6P8Y%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20(1-Fach-Master)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:46:07)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHYHG8I4B%22%2C%22annotationKey%22%3A%225ICIK8DL%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2215%22%2C%22position%22%3A%7B%22pageIndex%22%3A14%2C%22rects%22%3A%5B%5B74.366%2C538.94%2C537.926%2C550.27%5D%2C%5B74.366%2C526.94%2C537.926%2C538.27%5D%2C%5B74.366%2C514.94%2C253.476%2C526.27%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAXF6P8Y%22%5D%2C%22locator%22%3A%2215%22%7D%7D">"Die Studierenden haben exemplarische Kenntnisse über aktuelle virtuelle Forschungsumgebungen und Repositorien sowie grundlegende Kenntnisse professionellen Projektmanagements erworben und können typische Workflows mit diesen Mitteln modellieren."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAXF6P8Y%22%5D%2C%22locator%22%3A%2215%22%2C%22itemData%22%3A%7B%22id%22%3A7580%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20(1-Fach-Master)%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Würzburg, 2016, p. 15</span>)</span></p></div></div>
+					</li>
+					<li id="item_TD4EFYXS">
+<div><p><span id="detailViewData:tabContainer:parallelGroupSchedule_1:basicDataFieldset:j_id_5p_l_t_2_69_f:responsibleLecturerList:0:j_id_5p_l_t_2_69_k:instructor1">Digitale Objekte verwalten</span></p>
+<p><span id="detailViewData:tabContainer:parallelGroupSchedule_1:basicDataFieldset:j_id_5p_l_t_2_69_f:responsibleLecturerList:0:j_id_5p_l_t_2_69_k:instructor1">1. WS 19/20; 18/19; 17/18<br></span></p>
+<p><span id="detailViewData:tabContainer:parallelGroupSchedule_1:basicDataFieldset:j_id_5p_l_t_2_69_f:responsibleLecturerList:0:j_id_5p_l_t_2_69_k:instructor1">Thorsten Vitt</span></p>
+<p>Im Seminar beschäftigen wir uns mit Strategien, die Entwicklung von Software (für DH-Projekte) etwas zu professionalisieren. Mögliche Fragestellungen sind etwa:</p>
+<ul>
+<li>Wie können wir sinnvoll mit anderen gemeinsam Software entwickeln?</li>
+<li>Wie vermeiden wir Frust im Umgang mit Abhängigkeiten?</li>
+<li>Wie können wir die Reproduzierbarkeit unserer Ergebnisse sicherstellen?</li>
+<li>Wie können wir Fehler in unseren Programmen möglichst früh finden und verhindern?</li>
+<li>Wie können wir Komplexität reduzieren und vergrabene Bugs beheben?</li>
+</ul>
+<p>SoSe 2018; 2017</p>
+<p>Digitale Objekte verwalten</p>
+<p>Metadaten, Portale und digitale Langzeitarchivierung</p>
+<p><span style="left: 188.973px; top: 805.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.936313);">Die Lehreinheit gibt einen einführenden Überblick über den Zusammenhang</span><span style="left: 188.973px; top: 819.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.957088);">von Metadaten, Recherchemöglichkeiten und Konzeption von</span><span style="left: 188.973px; top: 833.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.945601);">(fachwissenschaftlichen) Portalen. Abgerundet wird die Blockveranstaltung</span><span style="left: 188.973px; top: 847.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.955331);">von einer kurzen Einführung in die Langzeitarchivierung digitaler Objekte</span><span style="left: 188.973px; top: 861.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.954564);">bzw. in das Forschungsdatenmanagement. Beantwortet z.B. Fragen wie:</span><span style="left: 188.973px; top: 875.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.953446);">- Welche Metadaten sind für welche Recherchezwecke geeignet?</span><span style="left: 188.973px; top: 889.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.94918);">- Wie werden welche Metadatenelemente für welche Zwecke bei einem</span><span style="left: 188.973px; top: 903.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.948682);">(fachwissenschaftlichen) Portal eingesetzt (Stichworte: Suche,</span><span style="left: 188.973px; top: 917.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.954789);">Navigieren/Browsen, Filtern, Sortieren, Ranking etc.)?</span><span style="left: 188.973px; top: 931.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.935799);">- Was muss bei der Konzeption eines (fachwissenschaftlichen) Portals</span><span style="left: 188.973px; top: 945.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.94631);">beachtet werden?</span><span style="left: 188.973px; top: 959.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.955936);">- Wie und wozu können Web 2.0 Anwendungen eingesetzt werden?</span><span style="left: 188.973px; top: 973.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.949807);">- Was wird unter der digitalen Langzeitarchivierung von Forschungsdaten</span><span style="left: 188.973px; top: 987.062px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.944142);">verstanden?</span><span style="left: 188.973px; top: 1001.06px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.942763);">- Welche Aspekte gilt es beim Forschungsdatenmanagement zu beachten?</span></p>
+<p><span style="left: 188.973px; top: 1001.06px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.942763);">WS 16/17</span></p>
+<p><span style="left: 188.973px; top: 1001.06px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.942763);">Kamzelak<br></span></p>
+<p><span style="left: 188.973px; top: 1001.06px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.942763);">Digitale Objekte verwalten: Strategie, Planung und Durchführung von DH-Projekten<br></span></p>
+<p><span style="left: 188.973px; top: 1001.06px; font-size: 11.6667px; font-family: sans-serif; transform: scaleX(0.942763);">Virtuelle Forschungsumgebungen basieren auf dem Wissen über die Anforderungen geisteswissenschaftlicher Forschung. Im Seminar werden wir grundlegende Kenntnisse professionellen wissenschaftlichen Projektmanagements erwerben und einen typischen Workflow mit Mitteln wie Wikis und Datenbanken (CMS) modellieren.</span></p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_HYHG8I4B">DE_Würzburg_MA_DigitalHumanities_2016.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_G6YWS9AP" class="item document">
+			<h2>Modulhandbuch für das Studienfach Digital Humanities (2-Fach-Master)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Würzburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 10:45:20</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:45:58</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_2ES2FSLR">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG6YWS9AP%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG6YWS9AP%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20(2-Fach-Master)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:46:09)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS7TUVAKH%22%2C%22annotationKey%22%3A%223BJMMEJQ%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B74.366%2C538.94%2C537.926%2C550.27%5D%2C%5B74.366%2C526.94%2C537.926%2C538.27%5D%2C%5B74.366%2C514.94%2C253.476%2C526.27%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG6YWS9AP%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Die Studierenden haben exemplarische Kenntnisse über aktuelle virtuelle Forschungsumgebungen und Repositorien sowie grundlegende Kenntnisse professionellen Projektmanagements erworben und können typische Workflows mit diesen Mitteln modellieren."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG6YWS9AP%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A75544%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20(2-Fach-Master)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Würzburg, 2016, p. 12</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_S7TUVAKH">DE_Würzburg_MA_45CPNFDH_2016.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6TWUZ5V5" class="item document">
+			<h2>Modulhandbuch Studiengang Master of Science Computational Linguistics</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Stuttgart</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 11:09:21</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:19:10</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_3UQW32UH">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Science%20Computational%20Linguistics%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 11:18:24)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FE5WWF3GC%22%2C%22annotationKey%22%3A%22YYN458KV%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2286%22%2C%22position%22%3A%7B%22pageIndex%22%3A85%2C%22rects%22%3A%5B%5B255.117%2C506.623%2C522.997%2C516.623%5D%2C%5B255.117%2C494.623%2C485.777%2C504.623%5D%2C%5B255.117%2C482.623%2C520.837%2C492.623%5D%2C%5B255.117%2C470.623%2C543.007%2C480.623%5D%2C%5B255.117%2C458.623%2C488.567%2C468.623%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%2286%22%7D%7D">"Die Teilnehmer verstehen psychologische und soziologische Aspekte im Software Engineering. Sie verstehen die entsprechenden Konzepte aus diesen Gebieten, kennen die Theorien und empirischen Erkenntnisse im Software Engineering dazu und können psychometrische Tests anwenden."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%2286%22%2C%22itemData%22%3A%7B%22id%22%3A75564%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Science%20Computational%20Linguistics%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 86</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FE5WWF3GC%22%2C%22annotationKey%22%3A%22BBRWLH6H%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2286%22%2C%22position%22%3A%7B%22pageIndex%22%3A85%2C%22rects%22%3A%5B%5B255.117%2C439.123%2C300.307%2C449.123%5D%2C%5B255.117%2C427.123%2C346.967%2C437.123%5D%2C%5B255.117%2C415.123%2C357.007%2C425.123%5D%2C%5B255.117%2C403.123%2C286.957%2C413.123%5D%2C%5B255.117%2C391.123%2C306.417%2C401.123%5D%2C%5B255.117%2C379.123%2C313.637%2C389.123%5D%2C%5B255.117%2C367.123%2C320.857%2C377.123%5D%2C%5B255.117%2C355.123%2C295.857%2C365.123%5D%2C%5B255.117%2C343.123%2C375.307%2C353.123%5D%2C%5B255.117%2C331.123%2C371.457%2C341.123%5D%2C%5B255.117%2C319.123%2C361.977%2C329.123%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%2286%22%7D%7D">"•Kognition •Motivation, Disziplin •Entscheidungsfindung •Stress •Emotionen •Produktivität •Persönlichkeit •Führung •Zusammenarbeit im Team •Lernende Organisationen •Psychometrische Tests"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%2286%22%2C%22itemData%22%3A%7B%22id%22%3A75564%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Science%20Computational%20Linguistics%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 86</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FE5WWF3GC%22%2C%22annotationKey%22%3A%22DGD5D44S%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%22131%22%2C%22position%22%3A%7B%22pageIndex%22%3A130%2C%22rects%22%3A%5B%5B255.117%2C523.623%2C498.017%2C533.623%5D%2C%5B255.117%2C511.623%2C539.697%2C521.623%5D%2C%5B255.117%2C499.623%2C551.367%2C509.623%5D%2C%5B255.117%2C487.623%2C534.657%2C497.623%5D%2C%5B255.117%2C475.623%2C299.587%2C485.623%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%22131%22%7D%7D">"Die Studierenden haben am Ende des Moduls vertiefte theoretische und praktische Kenntnisse im Führen und Coachen von Software-Entwicklungsprojekten. Sie können eigenständig z.B. als Scrum Master arbeiten und mit kritischen Projektsituationen umgehen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%22131%22%2C%22itemData%22%3A%7B%22id%22%3A75564%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Science%20Computational%20Linguistics%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 131</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FE5WWF3GC%22%2C%22annotationKey%22%3A%22NV8F7V59%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%22131%22%2C%22position%22%3A%7B%22pageIndex%22%3A130%2C%22rects%22%3A%5B%5B255.117%2C444.123%2C400.887%2C454.123%5D%2C%5B255.117%2C432.123%2C460.377%2C442.123%5D%2C%5B255.117%2C420.123%2C388.087%2C430.123%5D%2C%5B255.117%2C408.123%2C393.667%2C418.123%5D%2C%5B255.117%2C396.123%2C392.557%2C406.123%5D%2C%5B255.117%2C384.123%2C354.207%2C394.123%5D%2C%5B255.117%2C372.123%2C484.827%2C382.123%5D%2C%5B265.117%2C360.123%2C539.137%2C370.123%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%22131%22%7D%7D">"•Agile Prinzipien, Agiles Manifest •Agile Vorgehensmodelle: XP, Scrum, Kanban •Die Rolle des Scrum Masters •Coachen von Software-Teams •Kich-off, Lift-off, Retrospektive •Moderationstechniker •Coach und Scrum Master in aktuellen Studien- und Entwicklungsprojekten in den Softwaretechnik-Studiengängen"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6TWUZ5V5%22%5D%2C%22locator%22%3A%22131%22%2C%22itemData%22%3A%7B%22id%22%3A75564%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Science%20Computational%20Linguistics%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 131</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_E5WWF3GC">DE_Stuttgart_MA_ComputationalLinguistics_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5QRMDGWP" class="item document">
+			<h2>Besondere Bestimmungen der Prüfungsordnung für den Masterstudiengang „Kultur und Gesellschaft“ für das Fach Digital Humanities der Fakultät für Kulturwissenschaften an der Universität Paderborn</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Paderborn</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>21.7.2020, 23:56:33</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>6.3.2023, 10:56:05</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_MX3N6ZVI">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Besondere%20Bestimmungen%20der%20Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Masterstudiengang%20%E2%80%9EKultur%20und%20Gesellschaft%E2%80%9C%20f%C3%BCr%20das%20Fach%20Digital%20Humanities%20der%20Fakult%C3%A4t%20f%C3%BCr%20Kulturwissenschaften%20an%20der%20Universit%C3%A4t%20Paderborn%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Paderborn%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:37:16)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFWVAL7PB%22%2C%22annotationKey%22%3A%22SRUDKLMC%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B186.551%2C311.75%2C553.215%2C324.418%5D%2C%5B96.144%2C297.23%2C552.88%2C309.898%5D%2C%5B96.144%2C282.71%2C553.014%2C295.378%5D%2C%5B96.144%2C268.19%2C553.314%2C280.858%5D%2C%5B96.144%2C253.67%2C553.293%2C266.338%5D%2C%5B96.144%2C239.15%2C441.776%2C251.818%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Zusätzlich wird sein Seminar zum „Projektmanagement“ angeboten, in denen die Projektteilnehmenden lernen, wie Projektziele zu formulieren sind, der Stand der Forschung einzugrenzen ist und wie ein Arbeits- und Zeitplan zur Koordination von Aufgaben und ggf. Personen (im Falle von Teamarbeit) anzufertigen ist. Die Präsenzzeit im Rahmen des Projektseminars dient der Projektsteuerung und -fortschrittspräsentation. Hier besprechen die Kleingruppen fachliche und administrative Probleme bei der Projektdurchführung mit der Betreuerin oder dem Betreuer bzw. mit fachübergreifenden Betreuer-Tandems."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A7527%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Besondere%20Bestimmungen%20der%20Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Masterstudiengang%20%E2%80%9EKultur%20und%20Gesellschaft%E2%80%9C%20f%C3%BCr%20das%20Fach%20Digital%20Humanities%20der%20Fakult%C3%A4t%20f%C3%BCr%20Kulturwissenschaften%20an%20der%20Universit%C3%A4t%20Paderborn%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Paderborn%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Paderborn, 2019, p. 12</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFWVAL7PB%22%2C%22annotationKey%22%3A%22R33EN333%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B96.144%2C200.63%2C208.553%2C213.298%5D%2C%5B96.264%2C183.11%2C171.923%2C195.778%5D%2C%5B114.14%2C168.56%2C414.075%2C181.228%5D%2C%5B96.264%2C154.04%2C184.421%2C166.708%5D%2C%5B114.14%2C139.64%2C553.202%2C152.308%5D%2C%5B114.14%2C125.12%2C471.742%2C137.788%5D%2C%5B96.264%2C110.6%2C194.522%2C123.268%5D%2C%5B114.14%2C96.084%2C553.194%2C108.752%5D%2C%5B114.14%2C81.564%2C217.022%2C94.232%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Die Studierenden erwerben:  Faktenwissen: Methoden der „Digital Humanities“ beschreiben und unterscheiden können.  Methodenwissen: Durchführung eines kleinen Forschungsprojekts auf Masterarbeits-Niveau; Verfahren aus dem Bereich der „Digital Humanities auswählen und eigenständig anwenden und weiterentwickeln können.  Transferkompetenz: Planen eines Forschungsprojekts inkl. der Erstellung eines Arbeits- und Zeitplans; Interdisziplinäre Kommunikationsfähigkeit."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5QRMDGWP%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A7527%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Besondere%20Bestimmungen%20der%20Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Masterstudiengang%20%E2%80%9EKultur%20und%20Gesellschaft%E2%80%9C%20f%C3%BCr%20das%20Fach%20Digital%20Humanities%20der%20Fakult%C3%A4t%20f%C3%BCr%20Kulturwissenschaften%20an%20der%20Universit%C3%A4t%20Paderborn%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Paderborn%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Paderborn, 2019, p. 12</span>)</span></p></div></div>
+					</li>
+					<li id="item_5SF5VHPP">
+<div><p>Forschungspraxis</p>
+<p>&nbsp;</p>
+<p>Im Modul Forschungspraxis werden den Studierenden – auch in Kooperation mit anderen Fachvertreterinnen und -<br>vertretern der Fakultät für Kulturwissenschaften und der Informatik – Problemstellungen aus dem Forschungsalltag<br>der „Digital Humanities“ in einer ersten Sitzung vorgestellt. Je nach Umfang der zu lösenden Aufgabe besteht die<br>Möglichkeit in diesem Modul in einer Gruppe von 2-3 Studierenden (interdisziplinär) oder individuell (fachspezifisch)<br>zu bearbeiten. Deshalb unterteilt sich die LV „Praxisprojekt“ in Kleingruppen, die im Rahmen des Projektkolloquiums<br>ihre Idee, deren Umsetzung sowie die Resultate vorstellen und mit den anderen Modulteilnehmern kritisch<br>diskutieren werden. Zusätzlich wird sein Seminar zum „Projektmanagement“ angeboten, in denen die<br>Projektteilnehmenden lernen, wie Projektziele zu formulieren sind, der Stand der Forschung einzugrenzen ist und<br>wie ein Arbeits- und Zeitplan zur Koordination von Aufgaben und ggf. Personen (im Falle von Teamarbeit)<br>anzufertigen ist. Die Präsenzzeit im Rahmen des Projektseminars dient der Projektsteuerung und -fortschritts-<br>präsentation. Hier besprechen die Kleingruppen fachliche und administrative Probleme bei der Projektdurchführung<br>mit der Betreuerin oder dem Betreuer bzw. mit fachübergreifenden Betreuer-Tandems.</p>
+<p>&nbsp;</p>
+<p>Lernergebnisse (learning outcomes) / Kompetenzen:<br>Die Studierenden erwerben:</p>
+<p>- Faktenwissen: Methoden der „Digital Humanities“ beschreiben und unterscheiden können.<br>- Methodenwissen: Durchführung eines kleinen Forschungsprojekts auf Masterarbeits-Niveau; Verfahren aus dem Bereich der „Digital Humanities auswählen und eigenständig anwenden und weiterentwickeln können.</p>
+<p>- Transferkompetenz: Planen eines Forschungsprojekts inkl. der Erstellung eines Arbeits- und Zeitplans; Interdisziplinäre&nbsp;Kommunikationsfähigkeit</p>
+<p>- Normativ-bewertendes Wissen: Methoden zur Lösung von Problemen in den „Digital Humanities“ gegenüberstellen und entsprechend der Aufgabenstellung bewerten zu können.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_FWVAL7PB">DE_Paderborn_MA_DH_2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3QPRZKVW" class="item document">
+			<h2>Modulhandbuch Master of Science Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Leipzig</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:12:23</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:42:07</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_3ILZMD4Y">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Master%20of%20Science%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Leipzig%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:36:15)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FSEX5EQ33%22%2C%22annotationKey%22%3A%22QVSPXAEF%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2216%22%2C%22position%22%3A%7B%22pageIndex%22%3A15%2C%22rects%22%3A%5B%5B165.602%2C106.808%2C504.058%2C117.98%5D%2C%5B165.601%2C95.288%2C463.19%2C106.46%5D%2C%5B165.601%2C83.708%2C502.74%2C94.88%5D%2C%5B165.601%2C72.189%2C457.022%2C83.36%5D%2C%5B165.601%2C60.609%2C451.681%2C71.78%5D%2C%5B58.321%2C614.287%2C219.577%2C625.458%5D%2C%5B57.54%2C571.447%2C216.83%2C582.798%5D%2C%5B57.54%2C436.867%2C341.452%2C448.279%5D%2C%5B57.54%2C529.266%2C528.001%2C540.673%5D%2C%5B165.6%2C517.921%2C273.369%2C529.093%5D%2C%5B165.6%2C503.942%2C525.175%2C515.113%5D%2C%5B165.6%2C492.362%2C273.346%2C503.534%5D%2C%5B165.6%2C478.382%2C471.661%2C489.554%5D%2C%5B165.6%2C466.802%2C265.01%2C477.974%5D%2C%5B294.54%2C717.905%2C349.525%2C726.842%5D%2C%5B294.6%2C695.157%2C362.559%2C708.564%5D%2C%5B416.82%2C717.185%2C458.014%2C726.122%5D%2C%5B416.88%2C695.157%2C481.532%2C708.564%5D%2C%5B60.54%2C717.905%2C135.673%2C726.842%5D%2C%5B60.6%2C695.877%2C162.676%2C709.284%5D%2C%5B57.6%2C736.734%2C302.671%2C752.374%5D%2C%5B57.54%2C637.081%2C387.547%2C648.433%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%5D%2C%22locator%22%3A%2216%22%7D%7D">"Seminar: Im Seminar "Redaktions-/Projektmanagement" geht es speziell um Fragen der redaktionellen Organisation und des Managements von projektorientiertem Arbeiten. Erstens werden die verschiedenen Formen der horizontalen und vertikalen Differenzierung von Redaktionen (u.a. Themenressorts, Hierarchien, Newsrooms) sowie Strukturen der Empfohlen für: 2. Semester Dauer 1 Semester Arbeitsaufwand 10 LP = 300 Arbeitsstunden (Workload) Lehrformen • Vorlesung "Medienökonomie/-management" (2 SWS) = 30 h Präsenzzeit und 70 h Selbststudium = 100 h • Seminar "Redaktions-/Projektmanagement" (2 SWS) = 30 h Präsenzzeit und 70 h Selbststudium = 100 h • Seminar "Formatentwicklung" (2 SWS) = 30 h Präsenzzeit und 70 h Selbststudium = 100 h Modulnummer 06-005-0005 Modulform Wahlpflicht Akademischer Grad Master of Science Master of Science Digital Humanities Modultitel (englisch) Organization and Development in Digital Journalis"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%5D%2C%22locator%22%3A%2216%22%2C%22itemData%22%3A%7B%22id%22%3A7591%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Master%20of%20Science%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Leipzig%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Leipzig, 2018, p. 16</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FSEX5EQ33%22%2C%22annotationKey%22%3A%22CKJAGULK%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2217%22%2C%22position%22%3A%7B%22pageIndex%22%3A16%2C%22rects%22%3A%5B%5B165.6%2C741.661%2C525.118%2C752.833%5D%2C%5B165.6%2C730.141%2C519.373%2C741.313%5D%2C%5B165.6%2C718.562%2C446.556%2C729.733%5D%2C%5B165.6%2C707.042%2C530.394%2C718.214%5D%2C%5B165.6%2C695.462%2C526.663%2C706.634%5D%2C%5B165.6%2C683.942%2C523.677%2C695.114%5D%2C%5B165.6%2C672.363%2C266.325%2C683.534%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%5D%2C%22locator%22%3A%2217%22%7D%7D">"Qualitätssicherung und Erfolgsmessung analysiert. Zweitens werden Grundlagen erlernt, um eine Redaktion effizient zu leiten und dabei sowohl publizistische als auch betriebswirtschaftliche Ziele zu erreichen. Ebenso werden Managementgrundlagen vermittelt, um Projekte zu initiieren, strategisch zu planen und zu steuern, im Team bzw. arbeitsteilig durchzuführen, zu kontrollieren und zu implementieren. Drittens geht es um Selbstmanagement und Kenntnisse für eine freiberufliche Tätigkeit."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QPRZKVW%22%5D%2C%22locator%22%3A%2217%22%2C%22itemData%22%3A%7B%22id%22%3A7591%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Master%20of%20Science%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Leipzig%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Leipzig, 2018, p. 17</span>)</span></p>
+</div></div>
+					</li>
+					<li id="item_TZPPQBBP">
+<div><p>Modul Organisation und Entwicklung im digitalen Journalismus</p>
+<p>Seminar "Redaktions-/Projektmanagement"</p>
+<p>Ziele: ... Die Studierenden besitzen Kenntnisse, projektorientiertes Arbeiten zu planen und durchzuführen sowie Arbeitsprozesse in Teams zu strukturieren und kommunikativ und kooperativ zu leiten. ...</p>
+<p>Seminar:</p>
+<p>Im Seminar "Redaktions-/Projektmanagement" geht es speziell um Fragen der redaktionellen Organisation und des Managements von projektorientiertem Arbeiten. Erstens werden die verschiedenen Formen der horizontalen und vertikalen Differenzierung von Redaktionen (u.a. Themenressorts, Hierarchien, Newsrooms) sowie Strukturen der Qualitätssicherung und Erfolgsmessung analysiert. Zweitens werden Grundlagen erlernt, um eine Redaktion effizient zu leiten und dabei sowohl publizistische als auch betriebswirtschaftliche Ziele zu erreichen. Ebenso werden Managementgrundlagen vermittelt, um Projekte zu initiieren, strategisch zu planen und zu steuern, im Team bzw. arbeitsteilig durchzuführen, zu kontrollieren und zu implementieren. Drittens geht es um Selbstmanagement und Kenntnisse für eine freiberufliche Tätigkeit.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_SEX5EQ33">DE_Leipzig_MA_DigitalHumanities_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DVK8IAGY" class="item document">
+			<h2>DE_Dresden_MA_DigitalHumanities_2022.pdf</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Technische Universität Dresden</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:20:10</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:22:58</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_W32U5J9M">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 17:23:41)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FD77VVD9Q%22%2C%22annotationKey%22%3A%22J96TKHDT%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A1%2C%22rects%22%3A%5B%5B311.511%2C543.369%2C523.116%2C553.741%5D%2C%5B70.635%2C529.829%2C523.267%2C540.2%5D%2C%5B70.635%2C516.169%2C287.338%2C526.54%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%226%22%7D%7D">"Die Studierenden sind in der Lage, ihre Fähigkeiten in komplexe Projekte einzubringen. Sie sind somit zu lösungsorientierter Arbeit in interkulturellen und interdisziplinären Teams befähigt."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%226%22%2C%22itemData%22%3A%7B%22id%22%3A75709%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Dresden, 2022, p. 6</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FD77VVD9Q%22%2C%22annotationKey%22%3A%22WKLGQNAP%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A7%2C%22rects%22%3A%5B%5B201.848%2C658.761%2C523.391%2C669.132%5D%2C%5B201.848%2C645.22%2C523.352%2C655.592%5D%2C%5B201.848%2C631.56%2C293.426%2C641.932%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Mit Abschluss des Moduls haben die Studierenden Kenntnisse über die Planung und Organisation inter- und/oder transdisziplinärer Kooperationsprojekte."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A75709%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Dresden, 2022, p. 12</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FD77VVD9Q%22%2C%22annotationKey%22%3A%22GAIJLMCB%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A7%2C%22rects%22%3A%5B%5B201.848%2C524.676%2C523.376%2C535.048%5D%2C%5B201.848%2C511.016%2C523.398%2C521.388%5D%2C%5B201.848%2C497.476%2C449.9%2C507.848%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Das Modul umfasst exemplarische Modellierungen von Kooperationsprojekten zu den Themen Gesellschaft und Geschichte, Kunst und Bild, Schule und Bildung sowie Sprache und Literatur."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A75709%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Dresden, 2022, p. 12</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FD77VVD9Q%22%2C%22annotationKey%22%3A%222SX8JMRL%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2219%22%2C%22position%22%3A%7B%22pageIndex%22%3A14%2C%22rects%22%3A%5B%5B238.362%2C604.36%2C523.53%2C614.732%5D%2C%5B201.848%2C590.82%2C456.83%2C601.191%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2219%22%7D%7D">"Sie verfügen über personale Kompetenzen wie zum Beispiel Teamarbeit, Zeitmanagement und Arbeitsorganisation."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2219%22%2C%22itemData%22%3A%7B%22id%22%3A75709%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Dresden, 2022, p. 19</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FD77VVD9Q%22%2C%22annotationKey%22%3A%22XCNG6BR9%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2219%22%2C%22position%22%3A%7B%22pageIndex%22%3A14%2C%22rects%22%3A%5B%5B201.848%2C499.274%2C363.482%2C509.645%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2219%22%7D%7D">"Praktikum (10 SWS), Selbststudium"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDVK8IAGY%22%5D%2C%22locator%22%3A%2219%22%2C%22itemData%22%3A%7B%22id%22%3A75709%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Dresden_MA_DigitalHumanities_2022.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Dresden%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Dresden, 2022, p. 19</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_D77VVD9Q">DE_Dresden_MA_DigitalHumanities_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_V5P9VFGK" class="item document">
+			<h2>Prüfungsordnung für den Studiengang „Cultural Data Studies“ mit dem Abschluss „Master of Arts (M.A.)“ der Philipps-Universität Marburg</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Philipps-Universität Marburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:13:29</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:19:29</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_EANWSKBV">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Studiengang%20%E2%80%9ECultural%20Data%20Studies%E2%80%9C%20mit%20dem%20Abschluss%20%E2%80%9EMaster%20of%20Arts%20(M.A.)%E2%80%9C%20der%20Philipps-Universit%C3%A4t%20Marburg%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Philipps-Universit%C3%A4t%20Marburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 17:18:32)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FB5G6F3KC%22%2C%22annotationKey%22%3A%22QVDLJHGZ%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%223%22%2C%22position%22%3A%7B%22pageIndex%22%3A2%2C%22rects%22%3A%5B%5B91.332%2C159.5%2C538.406%2C172.88%5D%2C%5B68.064%2C145.7%2C538.08%2C159.08%5D%2C%5B68.064%2C131.9%2C538.696%2C145.28%5D%2C%5B68.064%2C118.1%2C538.224%2C131.48%5D%2C%5B68.064%2C104.3%2C538.236%2C117.68%5D%2C%5B68.064%2C90.504%2C538.708%2C103.884%5D%2C%5B68.064%2C76.704%2C288.74%2C90.084%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%223%22%7D%7D">"Durch die starke Praxis- und Projektorientierung des Studiengangs sind die Absolventinnen und Absolventen des Studiengangs insbesondere befähigt, Projekte zu konzipieren und zu strukturieren, in interdisziplinären Teams zu kooperieren und Projektergebnisse nachvollziehbar zu dokumentieren sowie diese verständlich zu präsentieren. Sie sind des Weiteren in der Lage, insbesondere an der Schnittstelle zur Informatik bzw. in der Zusammenarbeit mit IT-Personal, Arbeits- und Kommunikationsprozesse zu moderieren."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%223%22%2C%22itemData%22%3A%7B%22id%22%3A75703%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Studiengang%20%E2%80%9ECultural%20Data%20Studies%E2%80%9C%20mit%20dem%20Abschluss%20%E2%80%9EMaster%20of%20Arts%20(M.A.)%E2%80%9C%20der%20Philipps-Universit%C3%A4t%20Marburg%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Philipps-Universit%C3%A4t%20Marburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Philipps-Universität Marburg, 2021, p. 3</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FB5G6F3KC%22%2C%22annotationKey%22%3A%22BF39XZ9R%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2226%22%2C%22position%22%3A%7B%22pageIndex%22%3A25%2C%22rects%22%3A%5B%5B389.14%2C135.118%2C500.174%2C146.224%5D%2C%5B309.53%2C123.568%2C500.174%2C134.674%5D%2C%5B309.53%2C112.168%2C475.254%2C123.274%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%2226%22%7D%7D">"Die Studierenden sind in der Lage, Arbeitsprozesse in einem Team zu strukturieren und zu planen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%2226%22%2C%22itemData%22%3A%7B%22id%22%3A75703%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Studiengang%20%E2%80%9ECultural%20Data%20Studies%E2%80%9C%20mit%20dem%20Abschluss%20%E2%80%9EMaster%20of%20Arts%20(M.A.)%E2%80%9C%20der%20Philipps-Universit%C3%A4t%20Marburg%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Philipps-Universit%C3%A4t%20Marburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Philipps-Universität Marburg, 2021, p. 26</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FB5G6F3KC%22%2C%22annotationKey%22%3A%22B7J8AMTQ%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2228%22%2C%22position%22%3A%7B%22pageIndex%22%3A27%2C%22rects%22%3A%5B%5B392.726%2C181.198%2C450.753%2C192.304%5D%2C%5B309.53%2C169.678%2C464.408%2C180.784%5D%2C%5B309.53%2C158.158%2C472.735%2C169.264%5D%2C%5B315.29%2C145.942%2C425.52%2C157.144%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%2228%22%7D%7D">"Dies umfasst insbesondere die Aufgaben bei der Entwicklung von Softwarebausteinen  Projektmanagement,"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV5P9VFGK%22%5D%2C%22locator%22%3A%2228%22%2C%22itemData%22%3A%7B%22id%22%3A75703%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Pr%C3%BCfungsordnung%20f%C3%BCr%20den%20Studiengang%20%E2%80%9ECultural%20Data%20Studies%E2%80%9C%20mit%20dem%20Abschluss%20%E2%80%9EMaster%20of%20Arts%20(M.A.)%E2%80%9C%20der%20Philipps-Universit%C3%A4t%20Marburg%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Philipps-Universit%C3%A4t%20Marburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Philipps-Universität Marburg, 2021, p. 28</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_B5G6F3KC">DE_Marburg_MA_CulturalDataStudies_2021.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UU2H8VK3" class="item document">
+			<h2>Curriculum für das Masterstudium Digitale Geisteswissenschaften</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Karl-Franzens-Universität Graz</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:16:19</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>6.3.2023, 10:56:05</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_BQ2B5VD2">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUU2H8VK3%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUU2H8VK3%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Curriculum%20f%C3%BCr%20das%20Masterstudium%20Digitale%20Geisteswissenschaften%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Karl-Franzens-Universit%C3%A4t%20Graz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:40:07)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FSREVQ8AH%22%2C%22annotationKey%22%3A%22IL69IY84%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%226%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B76.584%2C617.17%2C206.81%2C627.205%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUU2H8VK3%22%5D%2C%22locator%22%3A%226%22%7D%7D">"D.3 Projektmanagement"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUU2H8VK3%22%5D%2C%22locator%22%3A%226%22%2C%22itemData%22%3A%7B%22id%22%3A7579%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Curriculum%20f%C3%BCr%20das%20Masterstudium%20Digitale%20Geisteswissenschaften%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Karl-Franzens-Universit%C3%A4t%20Graz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Karl-Franzens-Universität Graz, 2017, p. 6</span>)</span></p></div></div>
+					</li>
+					<li id="item_2X5FRNC4">
+<div><p>Modul D: Nachhaltigkeit und (Forschungs-)Daten</p>
+<p>D.3 Projektmanagement VU 4ECTS</p>
+<p>In diesem Modul beschäftigt man sich mit Fragen der formalisierten inhaltlichen Erschließung,<br>der nachhaltigen Sicherung und der Langzeitarchivierung von geisteswissenschaftlichen<br>Forschungsdaten. Zudem lernt man unterschiedliche rechtliche Aspekte wie Urheberrecht,<br>Datenschutz und Lizenzierung kennen, die bei der Umsetzung von digitalen Sammlungen und<br>Datenbeständen zu berücksichtigen sind.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_SREVQ8AH">A_Graz_MA_DigitalHumanities_2017.pdf					</li>
+				</ul>
+				<h3 class="related">Verwandte Einträge</h3>
+				<ul class="related">
+					<li id="item_35TPMRZB">UNIGRAZonline - LV Projektmanagement (Planung, Umsetzung, Evaluierung von DH-Projekten) 2019/20</li>
+					<li id="item_A8H853YU">Studienleitfaden Masterstudium Digitale Geisteswissenschaften</li>
+				</ul>
+			</li>
+
+
+			<li id="item_A8H853YU" class="item document">
+			<h2>Studienleitfaden Masterstudium Digitale Geisteswissenschaften</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Karl-Franzens-Universität Graz</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>4.2.2023, 16:43:20</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>6.3.2023, 10:53:37</td>
+					</tr>
+				</table>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_26AE23BV">Studienleitfaden	Masterstudium	Digitale	Geisteswissenschaften	2017/2018					</li>
+				</ul>
+				<h3 class="related">Verwandte Einträge</h3>
+				<ul class="related">
+					<li id="item_UU2H8VK3">Curriculum für das Masterstudium Digitale Geisteswissenschaften</li>
+				</ul>
+			</li>
+
+
+			<li id="item_35TPMRZB" class="item webpage">
+			<h2>UNIGRAZonline - LV Projektmanagement (Planung, Umsetzung, Evaluierung von DH-Projekten) 2019/20</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Webseite</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Karl-Franzens-Universität Graz</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://online.uni-graz.at/kfu_online/wbLv.wbShowLVDetail?pStpSpNr=560452">https://online.uni-graz.at/kfu_online/wbLv.wbShowLVDetail?pStpSpNr=560452</a></td>
+					</tr>
+					<tr>
+					<th>Heruntergeladen am</th>
+						<td>4.2.2023, 16:49:33</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>4.2.2023, 16:49:33</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>6.3.2023, 10:53:09</td>
+					</tr>
+				</table>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_D55QQ2LP">
+<div><p>Lehrveranstaltung zu Projektmanagement</p>
+<p><a href="https://online.uni-graz.at/kfu_online/wbLv.wbShowLVDetail?pStpSpNr=560452">https://online.uni-graz.at/kfu_online/wbLv.wbShowLVDetail?pStpSpNr=560452</a></p>
+<p><strong>Projektmanagement (Planung, Umsetzung, Evaluierung von DH-Projekten)</strong><br>Vorlesung und Übung</p>
+<p>Bleier, Roman</p>
+<p>Klug, Helmut Werner</p>
+<p>Digital Humanities Projekte sind aufgrund ihrer mulitdisziplinären Ausrichtung und Methodik komplexe Vorhaben. Um diese Projekte erfolgreich durchführen zu können, bedarf es Fachleute für Planung, Betreuung bzw. Durchführung; die Grundlage dafür ist einerseits theoretisches Wissen zu unterschiedlichen Arten des Projektmanagements sowie praktische Erfahrung zu allen Phase des Planungs-, Erschliessungs-, Veröffentlichungs- und Archivierungsworkflows.<br>In der Lehrveranstaltung wird an einem konkreten Beispiel, in dem auf Digitale Edition fokussiert wird, der Workflow eines DH-Projekts von der Konzipierung bis hin zur Publikation durchexerziert. Die Studierenden werden in der Lehrveranstaltung in grundlegende theoretische und praktische Aspekte des Projektmanagement eingeführt, ihr Wissen über und Umgang mit Technologien und (Meta-)Datenstandards soll im Rahmen eines LV-Projekts praxisnah erweitert werden.</p>
+<p>Der Kurs ist für Studierende des DH-Master konzipiert. Es werden fundierte TEI und XSLT Kenntnisse sowie Basics des Webdevelopment erwartet.</p>
+<p>Im Rahmen der LV werden Kenntnisse zur Konzipierung, Planung und Durchführung von DH-Projekten erworben.</p>
+<p>&nbsp;</p>
+<p>Empfohlene Fachliteratur</p>
+<p>Reed, Ashley. Managing an Established Digital Humanities Project: Principles and Practices from the Twentieth Year of the William Blake Archive. In: DHQ 8:1, 2014. http://www.digitalhumanities.org/dhq/vol/8/1/000174/000174.html</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_GRZICWSY">LV - Detailansicht - UNIGRAZonline - Karl-Franzens-Universität Graz					</li>
+				</ul>
+				<h3 class="related">Verwandte Einträge</h3>
+				<ul class="related">
+					<li id="item_UU2H8VK3">Curriculum für das Masterstudium Digitale Geisteswissenschaften</li>
+				</ul>
+			</li>
+
+		</ul>
+	</body>
+</html>

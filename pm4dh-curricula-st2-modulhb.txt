@@ -1,0 +1,61 @@
+Eberhard Karls Universität Tübingen. 2021a. „Modulhandbuch Computational Linguistics BA“.
+Eberhard Karls Universität Tübingen. 2021b. „Modulhandbuch Computerlinguistik MA“.
+École polytechnique fédérale de Lausanne. 2022. „Humanités digitales“.
+Friedrich-Alexander-Universität Erlangen-Nürnberg. 2018a. „BA-Digitale Geistes- und Sozialwissenschaften Modulhandbuch“.
+Friedrich-Alexander-Universität Erlangen-Nürnberg. 2018b. „Modulhandbuch MA Digital Humanities“.
+Friedrich-Alexander-Universität Erlangen-Nürnberg. 2022. „Fachstudien- und Prüfungsordnung für das Fach Computerlinguistik im Zwei-Fach-Bachelorstudiengang“.
+Georg-August-Universität Göttingen. 2020a. „Modulverzeichnis zu der Prüfungs- und Studienordnung für den konsekutiven Master-Studiengang ‚Angewandte Informatik‘“.
+Georg-August-Universität Göttingen. 2020b. „Modulverzeichnis zu der Prüfungs- und Studienordnung für den konsekutiven Master-Studiengang ‚Digital Humanities‘“.
+Georg-August-Universität Göttingen. 2021. „Modulverzeichnis für den Bachelor-Teilstudiengang ‚Digital Humanities‘“.
+Heinrich-Heine-Universität Düsseldorf. 2018. „Modulhandbuch BA Computerlinguistik“.
+Johannes Gutenberg-Universität Mainz, und Hochschule Mainz – University of Applied Sciences. 2016. „Masterstudiengang Digitale Methodik in den Geistes- und Kulturwissenschaften“.
+Karl-Franzens-Universität Graz. 2017. „Curriculum für das Masterstudium Digitale Geisteswissenschaften“.
+Karl-Franzens-Universität Graz. 2021. „Curriculum für das Masterstudium Digitale Geisteswissenschaften“. 
+Ludwig-Maximilians-Universität München. 2018a. „Computerlinguistik“.
+Ludwig-Maximilians-Universität München. 2018b. „Computerlinguistik BA“.
+Ludwig-Maximilians-Universität München. 2018c. „Modulhandbuch Nebenfach: Digital Humanities - Sprachwissenschaften für Bachelorstudiengäng“.
+Otto-Friedrich Universität Bamberg. 2022. „Modulhandbuch Masterstudium Computing in the Humanities“.
+Philipps-Universität Marburg. 2021. „Prüfungsordnung für den Studiengang ‚Cultural Data Studies‘ mit dem Abschluss ‚Master of Arts (M.A.)‘ der Philipps-Universität Marburg“.
+Technische Universität Chemnitz. 2021. „Informatik für Geistes- und Sozialwissenschaftler mit dem Abschluss Master of Science (M.Sc.)“.
+Technische Universität Darmstadt. 2019a. „Data and Discourse Studies Master of Arts“.
+Technische Universität Darmstadt. 2019b. „Digital Philology B,A“,.
+Technische Universität Darmstadt. 2019c. „Digital Philology (Joint Bachelor of Arts)“. 
+Technische Universität Darmstadt. 2019d. „Linguistic and Literary Computing Master of Arts“.
+Technische Universität Dresden. 2022. „DE_Dresden_MA_DigitalHumanities_2022.pdf“.
+Universität Basel. 2023. „Master Studienfach - Digital Humanities“.
+Universität Bielefeld. 2012. „Modulhandbuch Texttechnologie und Computerlinguistik / Bachelor: Nebenfach (fw)“.
+Universität Bielefeld. 2013. „Modulhandbuch Computerlinguistik / Bachelor: Nebenfach“.
+Universität Bielefeld. 2023. „Modulhandbuch Computerlinguistik / Bachelor: Nebenfach (fw) [FsB vom 21.05.2021]“.
+Universität des Saarlandes. 2020a. „Modulhandbuch für den Bachelor-Studiengang  Computerlinguistik“.
+Universität des Saarlandes. 2020b. „Modulhandbuch für den Master-Studiengang  Language Science and Technology“.
+Universität Heidelberg. 2019a. „Modulhandbuch Computerlinguistik BA“.
+Universität Heidelberg. 2019b. „Modulhandbuch Computerlinguistik MA“.
+Universität Konstanz. 2017. „Masterstudiengang Speech and Language Processing“.
+Universität Leipzig. 2016. „Studienordnung für den Bachelorstudiengang Digital Humanities an der Universität Leipzig“.
+Universität Leipzig. 2018. „Modulhandbuch Master of Science Digital Humanities“.
+Universität Paderborn. 2019. „Besondere Bestimmungen der Prüfungsordnung für den Masterstudiengang ‚Kultur und Gesellschaft‘ für das Fach Digital Humanities der Fakultät für Kulturwissenschaften an der Universität Paderborn“.
+Universität Potsdam. 2013. „Cognitive Systems: Language, Learning, and Reasoning MA“.
+Universität Potsdam. 2017. „Fachspezifische Studien- und Prüfungs- ordnung für den Bachelorstudiengang Computerlinguistik an der Universität Potsdam“.
+Universität Regensburg. 2012. „Modulhandbuch Informationswissenschaft MA“.
+Universität Regensburg. 2017. „Modulhandbuch Digital Humanities MA“.
+Universität Stuttgart. 2022a. „Modulhandbuch Studiengang Bachelor of Science Maschinelle Sprachverarbeitung“.
+Universität Stuttgart. 2022b. „Modulhandbuch Studiengang Master of Arts Digital Humanities“.
+Universität Stuttgart. 2022c. „Modulhandbuch Studiengang Master of Science Computational Linguistics“.
+Universität Trier. 2014. „Modulhandbuch für den Master-Studiengang Digital Humanities“.
+Universität Trier. 2015. „Ordnung der Universität Trier für die Prüfung im Bachelorstudiengang Computerlinguistik (Haupt- und Nebenfach)“.
+Universität Trier. 2016. „Ordnung der Universität Trier für die Prüfung im Masterstudiengang Computerlinguistik“.
+Universität Trier. 2020. „Bachelorstudiengang Sprache, Technologie, Medien“.
+Universität Wien. 2022. „Curriculum für das Masterstudium Digital Humanities“.
+Universität Wuppertal. 2022. „Studiengang Editions- und Dokumentwissenschaft mit dem Abschluss Master of Arts“.
+Universität Würzburg. 2016a. „Modulhandbuch für das Studienfach Digital Humanities (1-Fach-Master)“.
+Universität Würzburg. 2016b. „Modulhandbuch für das Studienfach Digital Humanities (2-Fach-Master)“.
+Universität Würzburg. 2018a. „Modulhandbuch für das Studienfach Digital Humanities als Bachelor-Hauptfach“.
+Universität Würzburg. 2018b. „Modulhandbuch für das Studienfach Digital Humanities als Bachelor-Nebenfach“.
+Universität Würzburg. 2018c. „Modulhandbuch für das Studienfach Digital Humanities als Fach im 2-Fächer-Bachelor“.
+Universität zu Köln. 2017a. „Mittelalterstudien MA (1-Fach)“.
+Universität zu Köln. 2017b. „Mittelalterstudien MA (2-Fach)“.
+Universität zu Köln. 2017c. „Modulhandbuch - Informationsverarbeitung - BA (2-Fach)“.
+Universität zu Köln. 2018. „Medienwissenschaft BA“.
+Universität zu Köln. 2019. „Medienwissenschaft Master of Arts (M.A.)“.
+Universität zu Köln. 2022. „Modulhandbuch - Informationsverarbeitung - MA (1-Fach)“.
+Université de Lausanne. 2022. „MA en Humanités Numériques, programme commun ‚Cultures, sociétés et humanités numériques‘“.

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Zotero-Bericht</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg=="/>
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_9CS6DT9T" class="item document">
+			<h2>Medienwissenschaft Master of Arts (M.A.)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität zu Köln</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:11:37</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 15:50:52</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_43VRQJEZ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Medienwissenschaft%20Master%20of%20Arts%20(M.A.)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 15:50:08)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FKNJXFF2G%22%2C%22annotationKey%22%3A%225XRERAFI%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2220%22%2C%22position%22%3A%7B%22pageIndex%22%3A19%2C%22rects%22%3A%5B%5B114.14%2C489.49%2C195.505%2C502.158%5D%2C%5B114.14%2C470.89%2C523.106%2C483.558%5D%2C%5B114.14%2C458.29%2C522.764%2C470.958%5D%2C%5B114.14%2C445.69%2C522.741%2C458.358%5D%2C%5B114.14%2C433.07%2C522.689%2C445.738%5D%2C%5B114.14%2C420.47%2C447.537%2C433.138%5D%2C%5B114.14%2C401.75%2C523.104%2C414.418%5D%2C%5B114.14%2C389.15%2C522.896%2C401.818%5D%2C%5B114.14%2C376.55%2C522.808%2C389.218%5D%2C%5B114.14%2C363.95%2C523.123%2C376.618%5D%2C%5B114.14%2C351.35%2C149.876%2C364.018%5D%2C%5B81.744%2C329.15%2C333.24%2C341.818%5D%2C%5B114.14%2C310.55%2C191.486%2C323.218%5D%2C%5B132.14%2C291.144%2C522.74%2C303.898%5D%2C%5B150.14%2C278.51%2C522.761%2C291.178%5D%2C%5B150.14%2C265.88%2C172.308%2C278.548%5D%2C%5B132.14%2C246.474%2C523.074%2C259.228%5D%2C%5B150.14%2C233.96%2C522.619%2C246.628%5D%2C%5B150.14%2C221.24%2C285.56%2C233.908%5D%2C%5B132.14%2C201.834%2C522.674%2C214.588%5D%2C%5B150.14%2C189.32%2C390.9%2C201.988%5D%2C%5B132.14%2C169.914%2C522.685%2C182.668%5D%2C%5B150.14%2C157.28%2C522.818%2C169.948%5D%2C%5B150.14%2C144.68%2C185.391%2C157.348%5D%2C%5B132.14%2C125.274%2C522.954%2C138.028%5D%2C%5B150.14%2C112.64%2C251.498%2C125.308%5D%2C%5B132.14%2C93.214%2C522.93%2C105.968%5D%2C%5B150.14%2C80.7%2C441.055%2C93.368%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%5D%2C%22locator%22%3A%2220%22%7D%7D">"Inhalte des Moduls Mit dem Projektmodul wird im Studienverlauf des Masterprogramms eine Möglichkeit geschaffen, alternative Arbeitsformen zu erproben, die zeitlich und didaktisch den konventionellen universitären Rahmen erweitern. Bewusst ist das Modul nicht thematisch festgelegt, sondern definiert sich über die spezifische Arbeitsform. Dabei sollen Kompetenzen und Kenntnisse, die im bisherigen Studienverlauf erworben wurden, vertieft und im Hinblick auf das jeweilige Projekt neu perspektiviert werden. Das Projekt strebt ein greifbares und erreichbares Ergebnis an, das mit der jeweiligen Gruppe von Studierenden erarbeitet wird. Dabei kann es sich um eine Ausstellung oder eine digitale Präsentation handeln, die Organisation einer wissenschaftlichen Tagung oder das Erstellen einer Publikation. Die Studierenden üben hierbei im Besonderen die Anwendung des akademischen Wissens für vorher gesetzte Projekte. 3 Ziele des Moduls und zu erwerbende Kompetenzen Die Studierenden...  können fachspezifische Fähigkeiten (etwa der Medienanalyse, der Quellenkritik, der Diskussion von Medientheorie etc.) eigenständig einsetzen und für spezifische Projekte fruchtbar machen.  sind vertraut mit der eigenständigen Planung und Durchführung von größeren Forschungsprojekten und können die notwendigen Methoden und Zugänge für einen erfolgreichen Abschluss des Projektes auswählen.  haben Kenntnis von verschiedenen Formen des Projektmanagements sowie von verschiedenen Präsentationsformen für verschiedene Zuhörerschaften.  beherrschen ein zielführendes Zeitmanagement sowie eine effiziente Koordination verschiedener Gruppen mit verschiedenen Aufgaben und können darüber hinaus erfolgreich im Team arbeiten.  haben eine vertiefte Erfahrung darin, sich als Wissenschaftler und Forscher seriös und erfolgreich zu präsentieren.  sind vertraut mit – bezogen auf die Bedingungen und Zielsetzungen des Projektes – ver-schiedenen Berufsfeldern im Bereich Medien, Theater und Kulturmanagement"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%5D%2C%22locator%22%3A%2220%22%2C%22itemData%22%3A%7B%22id%22%3A7592%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Medienwissenschaft%20Master%20of%20Arts%20(M.A.)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2019, p. 20</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FKNJXFF2G%22%2C%22annotationKey%22%3A%22FJR6MUF5%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2221%22%2C%22position%22%3A%7B%22pageIndex%22%3A20%2C%22rects%22%3A%5B%5B112.1%2C793.249%2C483.335%2C804.377%5D%2C%5B290.93%2C48.48%2C304.37%2C61.86%5D%2C%5B81.864%2C357.267%2C213.578%2C371.037%5D%2C%5B81.864%2C335.03%2C278.104%2C347.698%5D%2C%5B232.37%2C322.43%2C357.09%2C347.698%5D%2C%5B307.85%2C322.43%2C445.021%2C347.698%5D%2C%5B383.23%2C322.43%2C484.222%2C347.698%5D%2C%5B81.864%2C300.83%2C504.811%2C316.498%5D%2C%5B81.864%2C266%2C198.404%2C278.668%5D%2C%5B108.98%2C247.4%2C289.634%2C260.068%5D%2C%5B108.98%2C234.8%2C276.045%2C247.468%5D%2C%5B108.98%2C216.2%2C227.456%2C228.868%5D%2C%5B108.98%2C197.48%2C213.884%2C210.148%5D%2C%5B108.98%2C178.88%2C223.432%2C191.548%5D%2C%5B307.85%2C266%2C356.57%2C278.668%5D%2C%5B307.85%2C234.8%2C325.504%2C247.468%5D%2C%5B307.85%2C216.2%2C325.504%2C228.868%5D%2C%5B307.85%2C197.48%2C325.504%2C210.148%5D%2C%5B383.23%2C266%2C445.518%2C278.668%5D%2C%5B383.23%2C234.8%2C400.864%2C247.468%5D%2C%5B383.23%2C216.2%2C400.864%2C228.868%5D%2C%5B383.23%2C197.48%2C400.864%2C210.148%5D%2C%5B383.23%2C178.88%2C405.913%2C191.548%5D%2C%5B458.62%2C266%2C521.382%2C278.668%5D%2C%5B458.62%2C234.8%2C473.74%2C247.468%5D%2C%5B458.62%2C216.2%2C468.7%2C228.868%5D%2C%5B458.62%2C197.48%2C468.7%2C210.148%5D%2C%5B81.864%2C156.8%2C190.345%2C169.468%5D%2C%5B108.98%2C138.2%2C522.704%2C150.868%5D%2C%5B108.98%2C125.6%2C522.822%2C138.268%5D%2C%5B108.98%2C112.88%2C522.936%2C125.548%5D%2C%5B108.98%2C100.26%2C523.153%2C112.928%5D%2C%5B132.14%2C773.374%2C522.574%2C786.128%5D%2C%5B150.14%2C760.84%2C347.204%2C773.508%5D%2C%5B132.14%2C741.314%2C362.849%2C754.068%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%5D%2C%22locator%22%3A%2221%22%7D%7D">"MODULHANDBUCH - MEDIENWISSENSCHAFT – VERBUND-MASTER OF ARTS 16 EM 1d: Medienhistoriografie Kennnummer Workload Leistungspunkte Studien-semester Häufigkeit des Angebots Dauer 4227MMXEM4 360 h 12 LP 1. Semester WiSe 1 Semester 1 Lehrveranstaltungen a) VL Medien- und Theatergeschichte schreiben: Probleme und Perspektiven im WiSe b) S Mediendiskurse im WiSe c) Ü Quellenkritik im WiSe d) Modulprüfung: Hausarbeit Kontaktzeit 30 h 30 h 30 h Selbststudium 30 h 60 h 30 h 150 h Gruppengröße 100 30 60 2 Inhalte des Moduls Das Bewusstsein um historische und kulturelle Kontingenz bildet die theoretische und methodische Grundlage für eine kulturwissenschaftliche Perspektive, die Pluralität und Vielgestaltigkeit nicht in Entwicklungsschemata subsumiert, sondern als Wechselverhältnisse und Aushandlungsprozesse beschreibt. Dieses Modul will diese Perspektive besonders stärken. Bot das vergleichbare Bachelormodul  kennen verschiedene Schnittstellen von Forschung und Öffentlichkeit und deren spezifischen Bedingungen und Möglichkeiten des Austauschs.  haben Erfahrungen mit dem Aufbau von Netzwerken."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F9CS6DT9T%22%5D%2C%22locator%22%3A%2221%22%2C%22itemData%22%3A%7B%22id%22%3A7592%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Medienwissenschaft%20Master%20of%20Arts%20(M.A.)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2019, p. 21</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_KNJXFF2G">DE_Köln_MA_MedieninfoVerbund_2015.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_LR5GVDBE" class="item document">
+			<h2>Modulhandbuch - Informationsverarbeitung - MA (1-Fach)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität zu Köln</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:11:15</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 16:01:08</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_ZWLKTYZP">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20MA%20(1-Fach)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 15:37:37)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FEGEMVKT5%22%2C%22annotationKey%22%3A%226N6TVQR6%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2215%22%2C%22position%22%3A%7B%22pageIndex%22%3A14%2C%22rects%22%3A%5B%5B109.94%2C173.12%2C329.093%2C185.788%5D%2C%5B109.94%2C154.52%2C517.452%2C167.188%5D%2C%5B109.94%2C141.92%2C517.437%2C154.588%5D%2C%5B109.94%2C129.2%2C517.201%2C141.868%5D%2C%5B109.94%2C116.6%2C517.15%2C129.268%5D%2C%5B109.94%2C104%2C517.322%2C116.668%5D%2C%5B109.94%2C91.404%2C517.509%2C104.072%5D%2C%5B109.94%2C78.804%2C517.228%2C91.472%5D%2C%5B109.94%2C66.204%2C514.24%2C78.872%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%5D%2C%22locator%22%3A%2215%22%7D%7D">"Ziele des Moduls und zu erwerbende Kompetenzen Die Studierenden gewinnen einen umfassenden Überblick über den internationalen Forschungsbereich der „Digital Humanities“ (DH). Sie erwerben damit die Befähigung, aktuelle Fragestellungen, Probleme und Entwicklungen sowohl aus den traditionellen Geisteswissenschaften in ihrer digitalen Transformation als auch aus den DH als eigener Disziplin zu identifizieren und in den übergeordneten Kontext einzuordnen. Über eigene kleinere exemplarische Projekte lernen sie außerdem, bestehende Ansätze zu evaluieren, neue Ansätze zu entwickeln, geeignete Datenstrukturen zu modellieren und mögliche Lösungen zu operationalisieren und zu formalisieren. Dadurch wird der ganze Arbeitsprozess eines „Digital Humanist“ von der Problemstellung bis hin zu"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%5D%2C%22locator%22%3A%2215%22%2C%22itemData%22%3A%7B%22id%22%3A7593%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20MA%20(1-Fach)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2022, p. 15</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FEGEMVKT5%22%2C%22annotationKey%22%3A%22SUSGTTFC%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2216%22%2C%22position%22%3A%7B%22pageIndex%22%3A15%2C%22rects%22%3A%5B%5B95.304%2C796.268%2C499.857%2C807.374%5D%2C%5B291.05%2C28.824%2C304.49%2C42.204%5D%2C%5B109.94%2C757.98%2C517.432%2C770.648%5D%2C%5B109.94%2C745.38%2C517.302%2C758.048%5D%2C%5B109.94%2C732.76%2C517.217%2C745.428%5D%2C%5B109.94%2C720.16%2C392.467%2C732.828%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%5D%2C%22locator%22%3A%2216%22%7D%7D">"MODULHANDBUCH - INFORMATIONSVERARBEITUNG - EIN-FACH-MASTER OF ARTS 11 Beantwortung von Forschungsfragen simuliert und entsprechende organisatorische (Planung, Strukturierung, Teamarbeit), operative (Recherche, Evaluation, Anwendung), konzeptionelle (Modellierung) und technische (Formalisierung) Fähigkeiten eingeübt und die Anschlussfähigkeit der eigenen Arbeiten an das globale Forschungsfeld der DH sichergestellt."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLR5GVDBE%22%5D%2C%22locator%22%3A%2216%22%2C%22itemData%22%3A%7B%22id%22%3A7593%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20MA%20(1-Fach)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2022, p. 16</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_EGEMVKT5">DE_Köln_MA_Informationsverarbeitung_2015.pdf					</li>
+					<li id="item_XBKEJDEZ">DE_Köln_MA_Informationsverarbeitung_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8GFKPAAC" class="item document">
+			<h2>Medienwissenschaft BA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität zu Köln</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:57:02</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 15:54:47</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_B8CIZ3H6">DE_Köln_BA_MedieninfoVerbund_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6A7PGVME" class="item document">
+			<h2>Modulhandbuch - Informationsverarbeitung - BA (2-Fach)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität zu Köln</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:56:40</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 15:36:28</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_9BBMUXR3">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20BA%20(2-Fach)%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 15:36:17)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLBULRCWN%22%2C%22annotationKey%22%3A%222G469MVE%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B109.94%2C263.48%2C329.071%2C276.148%5D%2C%5B109.94%2C244.88%2C517.514%2C257.548%5D%2C%5B109.94%2C232.28%2C517.433%2C244.948%5D%2C%5B109.94%2C219.68%2C355.077%2C232.348%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Ziele des Moduls und zu erwerbende Kompetenzen Mit erfolgreichem Abschluss des Moduls sind die Studierenden in der Lage, anwendungsreife Programme in einer objektorientierten Programmiersprache (Java oder C++) selbständig wie auch in Teamarbeit zu entwerfen, zu erstellen und zu dokumentieren."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A7597%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20BA%20(2-Fach)%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2017, p. 12</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLBULRCWN%22%2C%22annotationKey%22%3A%2256KKZ8I7%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B109.94%2C757.96%2C517.466%2C770.628%5D%2C%5B109.94%2C745.36%2C517.516%2C758.028%5D%2C%5B109.94%2C732.76%2C517.259%2C745.428%5D%2C%5B109.94%2C720.16%2C158.163%2C732.828%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2213%22%7D%7D">"Während des Semesters sind die TeilnehmerInnen der Übungen, verpflichtet, jeweils acht bis zehn kleinere Aufgabenlösungen zwischen den Veranstaltungen schriftlich zu bearbeiten. Diese Veranstaltungen dienen vor allem der zeitnahen Anwendung der erworbenen Kenntnisse in Teamarbeit."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2213%22%2C%22itemData%22%3A%7B%22id%22%3A7597%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20BA%20(2-Fach)%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2017, p. 13</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLBULRCWN%22%2C%22annotationKey%22%3A%22AF7WJHC8%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B109.94%2C519.01%2C517.206%2C531.678%5D%2C%5B109.94%2C506.41%2C517.09%2C519.078%5D%2C%5B109.94%2C493.81%2C517.228%2C506.478%5D%2C%5B109.94%2C481.21%2C517.574%2C493.878%5D%2C%5B109.94%2C468.49%2C450.436%2C481.158%5D%2C%5B109.94%2C449.89%2C517.128%2C462.558%5D%2C%5B109.94%2C437.27%2C517.355%2C449.938%5D%2C%5B109.94%2C424.67%2C158.163%2C437.338%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2214%22%7D%7D">"Das Hauptseminar thematisiert diese Bereiche und unterstützt die Studierenden in der Durchführung kleinerer, auch gruppenorientierter Projekte. Damit werden die linguistischen Grundlagen vertieft und anwendungsorientiert umgesetzt. Die Gruppenarbeit dient der Entwicklung der Teamfähigkeit der Studierenden. Über Hausarbeiten hinaus erstellen die Studierenden Lerneinheiten für E-LearningSysteme und tragen damit dazu bei, die Lerninhalte des Moduls weiter zu entwickeln. Die Übung vertieft die softwaretechnologische Kompetenz der Studierenden. Ihr Schwerpunkt ist die fortgeschrittene, komponentenorientierte Entwicklung von computerlinguistischen Modulen in Teamarbeit."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6A7PGVME%22%5D%2C%22locator%22%3A%2214%22%2C%22itemData%22%3A%7B%22id%22%3A7597%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20-%20Informationsverarbeitung%20-%20BA%20(2-Fach)%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20zu%20K%C3%B6ln%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität zu Köln, 2017, p. 14</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_LBULRCWN">DE_Köln_BA_Informationsverarbeitung_2015.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NR8C9GY3" class="item document">
+			<h2>Modulhandbuch für den Master-Studiengang Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Trier</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:14:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:16:29</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_LXNNSQZB">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Trier%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222014%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:55:53)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5KT2ZVAJ%22%2C%22annotationKey%22%3A%22MFU9KA2W%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2235%22%2C%22position%22%3A%7B%22pageIndex%22%3A34%2C%22rects%22%3A%5B%5B119.129%2C603.785%2C304.014%2C614.271%5D%2C%5B119.129%2C588.25%2C207.005%2C598.736%5D%2C%5B135.577%2C571.802%2C327.532%2C583.201%5D%2C%5B135.577%2C561.75%2C492.921%2C573.149%5D%2C%5B135.577%2C551.698%2C326.694%2C563.097%5D%2C%5B135.577%2C541.646%2C299.192%2C553.045%5D%2C%5B135.577%2C531.594%2C371.127%2C542.994%5D%2C%5B135.577%2C521.542%2C282.557%2C532.942%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%5D%2C%22locator%22%3A%2235%22%7D%7D">"Lernergebnisse (learning outcomes) / Kompetenzen Schlüsselqualifikationen • Wissenstransfer auf ein praktisches Projekt • Erwerb von Projektmanagementkompetenzen (Zeitmanagement, Planung und Durchführung) • Erweiterung kommunikativer Kompetenzen • Kommunikation mit Nicht-Experten • Erwerb von Kompetenzen zur Zusammenarbeit im Team • Problemlösungskompetenzen"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%5D%2C%22locator%22%3A%2235%22%2C%22itemData%22%3A%7B%22id%22%3A7585%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Trier%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222014%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Trier, 2014, p. 35</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5KT2ZVAJ%22%2C%22annotationKey%22%3A%22QWFQYSEE%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2235%22%2C%22position%22%3A%7B%22pageIndex%22%3A34%2C%22rects%22%3A%5B%5B119.129%2C446.153%2C143.281%2C456.639%5D%2C%5B119.129%2C430.618%2C197.441%2C441.104%5D%2C%5B135.577%2C413.713%2C477.069%2C425.569%5D%2C%5B183.826%2C405.032%2C440.056%2C415.517%5D%2C%5B119.129%2C384.928%2C169.105%2C395.414%5D%2C%5B119.129%2C364.824%2C279.072%2C375.31%5D%2C%5B168.474%2C343.35%2C503.605%2C355.772%5D%2C%5B216.175%2C334.669%2C304.054%2C345.154%5D%2C%5B168.474%2C323.246%2C414.058%2C335.668%5D%2C%5B168.474%2C313.194%2C479.017%2C325.616%5D%2C%5B168.474%2C303.142%2C474.297%2C315.564%5D%2C%5B168.474%2C293.09%2C503.204%2C305.513%5D%2C%5B216.175%2C284.409%2C249.479%2C294.895%5D%2C%5B168.474%2C272.987%2C390.588%2C285.409%5D%2C%5B168.474%2C262.935%2C419.446%2C275.357%5D%2C%5B168.474%2C252.883%2C503.191%2C265.305%5D%2C%5B216.175%2C244.202%2C251.452%2C254.687%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%5D%2C%22locator%22%3A%2235%22%7D%7D">"Inhalte Vorträge aus der Praxis • Vorstellung verschiedener Berufsbilder und Projekte im Bereich Digital Humanities durch eingeladene Experten aus Museen, Archiven und kulturhistorischen Instituten Projektseminar Durchführung eines konkreten DH-Projekts, z.B. o Entwicklung/Erweiterung eines Metadatenschemas für eine Sammlung digitaler Inhalte (textuell, oder multimedial) o Erstellung eines Anforderungsprofils für eine digitale Edition o Entwurf eines Graphical User Interfaces zur Suche in einer digitalen Sammlung o Entwicklung und Implementierung von Visualisierungsstrategien für DH-Daten o Entwicklung und Implementierung von texttechnologischen Erschließungsverfahren für DH-Daten o Erstellung eine Webseite für kulturhistorische Inhalte o Entwicklung eines Recommendersystems für digitale Objekte o Analyse des Nutzerverhaltens durch Auswertung von Besucher-Logs kulturhistorischer Webseiten"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNR8C9GY3%22%5D%2C%22locator%22%3A%2235%22%2C%22itemData%22%3A%7B%22id%22%3A7585%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Trier%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222014%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Trier, 2014, p. 35</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_5KT2ZVAJ">DE_Trier_MA_DigitalHumanities_2014.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_S4EL78JJ" class="item document">
+			<h2>Modulhandbuch Studiengang Master of Arts Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Stuttgart</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:13:44</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:08:19</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_ZXEEH8E9">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Arts%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 11:05:36)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVH5NZAH2%22%2C%22annotationKey%22%3A%229MDWC9P2%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2278%22%2C%22position%22%3A%7B%22pageIndex%22%3A77%2C%22rects%22%3A%5B%5B260.837%2C401.623%2C349.757%2C411.623%5D%2C%5B255.117%2C389.623%2C448.147%2C399.623%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%5D%2C%22locator%22%3A%2278%22%7D%7D">"m Team zu arbeiten •Lösungs- und prozessorientiert zu arbeiten"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%5D%2C%22locator%22%3A%2278%22%2C%22itemData%22%3A%7B%22id%22%3A7588%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Arts%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 78</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVH5NZAH2%22%2C%22annotationKey%22%3A%22W5Q94TJ7%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2278%22%2C%22position%22%3A%7B%22pageIndex%22%3A77%2C%22rects%22%3A%5B%5B255.117%2C348.123%2C523.547%2C358.123%5D%2C%5B255.117%2C336.123%2C504.137%2C346.123%5D%2C%5B255.117%2C324.123%2C524.667%2C334.123%5D%2C%5B255.117%2C312.123%2C520.257%2C322.123%5D%2C%5B255.117%2C300.123%2C502.997%2C310.123%5D%2C%5B255.117%2C288.123%2C532.467%2C298.123%5D%2C%5B255.117%2C276.123%2C551.367%2C286.123%5D%2C%5B255.117%2C264.123%2C414.067%2C274.123%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%5D%2C%22locator%22%3A%2278%22%7D%7D">"In Gruppenarbeit wird ein Digital Humanities-Projekt von den Studierenden erarbeitet, durchgeführt und dokumentiert. Das Projekt wird zu Semesterbeginn vereinbart und während des Semesters durchgeführt. Am Ende steht eine geeignete Präsentation/Dokumentation des Projektes sowie seiner Ergebnisse. Fach- und fakultätsübergreifende Projekte werden angestrebt. Das gleiche gilt für kooperationsübergreifende Projekte mit außeruniversitären Institutionen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS4EL78JJ%22%5D%2C%22locator%22%3A%2278%22%2C%22itemData%22%3A%7B%22id%22%3A7588%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Master%20of%20Arts%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 78</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_VH5NZAH2">DE_Stuttgart_MA_DigitalHumanities_2019.pdf					</li>
+					<li id="item_EFN5QETP">DE_Stuttgart_MA_DigitalHumanities_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RKFFV3RA" class="item document">
+			<h2>Fachspezifische Studien- und Prüfungs- ordnung für den Bachelorstudiengang Computerlinguistik an der Universität Potsdam</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Potsdam</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 17:13:38</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 17:15:04</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_EDG3WGDZ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FRKFFV3RA%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FRKFFV3RA%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Fachspezifische%20Studien-%20und%20Pr%C3%BCfungs-%20ordnung%20f%C3%BCr%20den%20Bachelorstudiengang%20Computerlinguistik%20an%20der%20Universit%C3%A4t%20Potsdam%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Potsdam%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 17:14:16)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FW9IZ72KK%22%2C%22annotationKey%22%3A%22YYNXC2DB%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2220%22%2C%22position%22%3A%7B%22pageIndex%22%3A19%2C%22rects%22%3A%5B%5B210.96%2C708.422%2C239.436%2C718.95%5D%2C%5B210.96%2C697.022%2C524.421%2C707.55%5D%2C%5B210.96%2C685.502%2C524.381%2C696.03%5D%2C%5B210.96%2C673.982%2C524.182%2C684.51%5D%2C%5B210.96%2C662.462%2C524.391%2C672.99%5D%2C%5B210.96%2C650.942%2C504.481%2C661.47%5D%2C%5B210.96%2C628.022%2C286.407%2C638.55%5D%2C%5B210.96%2C616.502%2C524.302%2C627.03%5D%2C%5B210.96%2C604.982%2C524.232%2C615.51%5D%2C%5B210.96%2C593.462%2C524.282%2C603.99%5D%2C%5B210.96%2C581.942%2C523.555%2C592.47%5D%2C%5B210.96%2C570.422%2C524.63%2C580.95%5D%2C%5B210.96%2C559.022%2C522.21%2C569.55%5D%2C%5B210.96%2C547.502%2C442.58%2C558.03%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FRKFFV3RA%22%5D%2C%22locator%22%3A%2220%22%7D%7D">"Inhalte Das Praktikum dient der Einübung, Überprüfung und Ergänzung der im Studium erworbenen fachlichen Kenntnisse, Methoden und Fähigkeiten. Es beinhaltet die praktische Umsetzung konkreter Implementierungsaufgaben für Aufgabenstellungen der Computerlinguistik/Sprachtechnologie, entweder im Kontext eines Industriebetriebs oder eines laufenden Forschungsprojekts. Qualifikationsziele Die Studierenden erwerben fachliche Kenntnisse, Fähigkeiten und Methoden, die sie auf ihre spätere berufliche Tätigkeit vorbereiten. Sie erhalten Einblicke in mögliche Berufs- und Tätigkeitsfelder. Die Studierenden sind mit den Arbeitsbedingungen in Projekten zu computerlinguistischen Aufgaben - entweder in einem Industriebetrieb oder in einem universitären Forschungsvorhaben - vertraut. Sie haben Erfahrungen in der praktischen Planung eines Projekts (Meilensteinplanung, etc.) und in der Teamarbeit"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FRKFFV3RA%22%5D%2C%22locator%22%3A%2220%22%2C%22itemData%22%3A%7B%22id%22%3A75631%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Fachspezifische%20Studien-%20und%20Pr%C3%BCfungs-%20ordnung%20f%C3%BCr%20den%20Bachelorstudiengang%20Computerlinguistik%20an%20der%20Universit%C3%A4t%20Potsdam%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Potsdam%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Potsdam, 2017, p. 20</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_W9IZ72KK">DE_Potsdam_BA_Computerlinguistik_2017.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DY46VD9U" class="item document">
+			<h2>Cognitive Systems: Language, Learning, and Reasoning MA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Potsdam</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>17.5.2023, 13:53:41</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>17.5.2023, 13:55:09</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_W34TNDQQ">DE_Potsdam_MA_CognitiveSystems_2014.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CAMZV7K3" class="item document">
+			<h2>Modulhandbuch Computerlinguistik BA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 16:40:41</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 16:45:44</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_I3ZCPXEQ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAMZV7K3%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAMZV7K3%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20BA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Heidelberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 16:45:13)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3RBY6ILN%22%2C%22annotationKey%22%3A%228SPNNJB3%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2237%22%2C%22position%22%3A%7B%22pageIndex%22%3A36%2C%22rects%22%3A%5B%5B447.854%2C282.76%2C507.77%2C295.093%5D%2C%5B216.471%2C270.04%2C507.699%2C282.373%5D%2C%5B216.471%2C257.32%2C507.838%2C269.653%5D%2C%5B216.471%2C244.84%2C507.726%2C257.173%5D%2C%5B216.471%2C232.12%2C507.673%2C244.453%5D%2C%5B216.471%2C219.4%2C357.096%2C231.733%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAMZV7K3%22%5D%2C%22locator%22%3A%2237%22%7D%7D">"Wesentliche Lernziele sind neben dem Besitz vertiefter praktischer Programmierkenntnisse (Techniken und Werkzeuge für verteilte Programmerstellung, Testverfahren und Qualitätskontrolle, Dokumentation, etc.) die Teamfähigkeit und planerische Fähigkeiten."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FCAMZV7K3%22%5D%2C%22locator%22%3A%2237%22%2C%22itemData%22%3A%7B%22id%22%3A75677%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20BA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Heidelberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Heidelberg, 2019, p. 37</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_3RBY6ILN">DE_Heidelberg_BA_Computerlinguistik_2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_FGZ5VXUQ" class="item document">
+			<h2>Modulhandbuch Computerlinguistik MA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 16:40:46</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 16:45:44</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_F8HYBSUD">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFGZ5VXUQ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFGZ5VXUQ%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20MA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Heidelberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 16:43:52)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNP5DG9QX%22%2C%22annotationKey%22%3A%22XSR9868K%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%223%22%2C%22position%22%3A%7B%22pageIndex%22%3A2%2C%22rects%22%3A%5B%5B57.591%2C131.116%2C539.498%2C144.522%5D%2C%5B57.591%2C117.196%2C539.505%2C130.602%5D%2C%5B57.591%2C103.516%2C429.819%2C116.922%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFGZ5VXUQ%22%5D%2C%22locator%22%3A%223%22%7D%7D">"AbsolventInnen sind in der Lage, die in Hauptseminaren oder im Forschungsmodul erworbenen Teamfähigkeiten auf neue Projekte zu übertragen, im Team Verantwortung zu übernehmen und damit Führungskompetenzen praktisch umzusetzen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFGZ5VXUQ%22%5D%2C%22locator%22%3A%223%22%2C%22itemData%22%3A%7B%22id%22%3A75678%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20MA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Heidelberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Heidelberg, 2019, p. 3</span>)</span></p></div></div>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_NP5DG9QX">DE_Heidelberg_MA_Computerlinguistik_2019.pdf				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_X2MCNV7N" class="item document">
+			<h2>Modulhandbuch für den Master-Studiengang  Language Science and Technology</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität des Saarlandes</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>6.3.2023, 10:32:07</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:22:05</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_MN9LBJ9K">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%E2%80%A8%20Language%20Science%20and%20Technology%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20des%20Saarlandes%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.3.2023, 10:33:52)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMIMAP92%22%2C%22annotationKey%22%3A%227YCUMVHE%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2223%22%2C%22position%22%3A%7B%22pageIndex%22%3A22%2C%22rects%22%3A%5B%5B56.7%2C498.631%2C185.673%2C510.92%5D%2C%5B56.725%2C480.303%2C515.319%2C492.592%5D%2C%5B56.7%2C465.975%2C537.143%2C478.264%5D%2C%5B56.7%2C451.647%2C524.887%2C463.936%5D%2C%5B56.7%2C437.319%2C524.458%2C449.608%5D%2C%5B56.7%2C422.99%2C504.89%2C435.28%5D%2C%5B56.7%2C408.662%2C442.557%2C420.952%5D%2C%5B56.7%2C390.334%2C86.03%2C402.624%5D%2C%5B56.725%2C372.006%2C522.036%2C384.295%5D%2C%5B56.7%2C357.678%2C529.975%2C369.967%5D%2C%5B56.7%2C343.35%2C255.425%2C355.639%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%5D%2C%22locator%22%3A%2223%22%7D%7D">"Lernziele / Kompetenzen Die Studierenden lernen anhand eines größeren praktischen computerlinguistischen Programmierprojekts, in Teamarbeit eine Aufgabe eigenständig zu lösen und ihre Arbeit zu präsentieren. Zu den vermittelten Kompetenzen gehört: Planung und Durchführung eines größeren Projekts; Teamarbeit; Arbeit unter Zeitbeschränkungen; softwaretechnische Kenntnisse und Fertigkeiten; Vertiefung von Programmierkenntnissen; Anwendung fortgeschrittener Programmierwerkzeuge; Darstellung der eigenen Arbeit in einer Hausarbeit und Präsentation im Vortrag. Inhalt Die Softwareprojekte richten sich typischerweise nach aktuellen Forschungsschwerpunkten des Master-Programms und sind in der Regel an Forschungsprojekte angebunden. Daher ändert sich die thematische Ausrichtung regelmäßig."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%5D%2C%22locator%22%3A%2223%22%2C%22itemData%22%3A%7B%22id%22%3A69735%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%E2%80%A8%20Language%20Science%20and%20Technology%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20des%20Saarlandes%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität des Saarlandes, 2020, p. 23</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMIMAP92%22%2C%22annotationKey%22%3A%22AMQ8VJTB%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2223%22%2C%22position%22%3A%7B%22pageIndex%22%3A22%2C%22rects%22%3A%5B%5B62.225%2C766.2%2C156.919%2C779.606%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%5D%2C%22locator%22%3A%2223%22%7D%7D">"Software Project"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FX2MCNV7N%22%5D%2C%22locator%22%3A%2223%22%2C%22itemData%22%3A%7B%22id%22%3A69735%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20den%20Master-Studiengang%E2%80%A8%20Language%20Science%20and%20Technology%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20des%20Saarlandes%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität des Saarlandes, 2020, p. 23</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_HMIMAP92">DE_Saarbrücken_MA_Language ScienceAndTechnology_2020.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2ZQCE3NV" class="item document">
+			<h2>Modulhandbuch für den Bachelor-Studiengang  Computerlinguistik</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität des Saarlandes</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 16:53:46</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 16:58:29</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_8J3Z89PE">DE_Saarbrücken_BA_Computerlinguistik_2020.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_T3DCJV5D" class="item document">
+			<h2>Modulhandbuch Texttechnologie und Computerlinguistik / Bachelor: Nebenfach (fw)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Bielefeld</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>de</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>21.7.2020, 23:14:33</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:23:13</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_9SQI5U3W">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Texttechnologie%20und%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%20(fw)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222012%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:28:06)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLTKE63B2%22%2C%22annotationKey%22%3A%222ZVU5WBG%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B84.53%2C409.884%2C157.682%2C421.884%5D%2C%5B84.53%2C386.429%2C502.167%2C394.419%5D%2C%5B84.53%2C374.429%2C507.68%2C382.419%5D%2C%5B84.53%2C362.429%2C506.066%2C370.419%5D%2C%5B84.53%2C350.429%2C363.725%2C358.419%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%5D%2C%22locator%22%3A%2214%22%7D%7D">"Kompetenzen Die Studierenden setzen das bisher erworbene theoretische Wissen im Rahmen einer praxisbezogenen Problemstellung aktiv um. Sie können eigenständig computerlinguistische bzw. texttechnologische Fragestellungen bearbeiten, Projekte kooperativ planen, gestalten und umsetzen. Dazu gehört auch das Erstellen von Arbeitsplänen und Pflichtenheften und einer entsprechenden Präsentation der geleisteten Arbeiten (s. Modulprüfung)."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%5D%2C%22locator%22%3A%2214%22%2C%22itemData%22%3A%7B%22id%22%3A7530%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Texttechnologie%20und%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%20(fw)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222012%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Bielefeld, 2012, p. 14</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FLTKE63B2%22%2C%22annotationKey%22%3A%22HZ37XYYS%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2215%22%2C%22position%22%3A%7B%22pageIndex%22%3A14%2C%22rects%22%3A%5B%5B87.15%2C542.739%2C214.087%2C550.729%5D%2C%5B87.15%2C523.009%2C350.221%2C530.999%5D%2C%5B87.15%2C511.009%2C320.594%2C518.999%5D%2C%5B87.15%2C499.009%2C347.145%2C506.999%5D%2C%5B87.15%2C487.009%2C343.525%2C494.999%5D%2C%5B87.15%2C475.009%2C336.118%2C482.999%5D%2C%5B87.15%2C463.009%2C297.199%2C470.999%5D%2C%5B87.15%2C451.009%2C147.738%2C458.999%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%5D%2C%22locator%22%3A%2215%22%7D%7D">"Projektseminar (Projekt o. Seminar) Erfolgreiche Realisierung und Dokumentation eines Projekts in Einzel- oder Kleingruppenarbeit aus dem Themengebiet der Veranstaltung mit zugehöriger schriftlicher Ausarbeitung im Umfang von 30 Stunden und im Regelfall von 12 Seiten. Bei Anfertigung der Modulprüfung durch mehrere Teilnehmer muss wie generell gewährleistet sein, dass die individuellen Anteile erkennbar bleiben (z. B. durch Kennzeichnung in der Dokumentation)."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FT3DCJV5D%22%5D%2C%22locator%22%3A%2215%22%2C%22itemData%22%3A%7B%22id%22%3A7530%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Texttechnologie%20und%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%20(fw)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222012%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Bielefeld, 2012, p. 15</span>)</span></p></div></div>
+					</li>
+					<li id="item_4B4WVWZS">
+<div><p>Projekt / Praxisprojekt</p>
+<p>Modul 23-TXT-BaCL6 Projektmodul</p>
+<p>Kompetenzen<br>Die Studierenden setzen das bisher erworbene theoretische Wissen im Rahmen einer praxisbezogenen Problemstellung<br>aktiv um. Sie können eigenständig computerlinguistische bzw. texttechnologische Fragestellungen bearbeiten, Projekte<br>kooperativ planen, gestalten und umsetzen. Dazu gehört auch das Erstellen von Arbeitsplänen und Pflichtenheften und<br>einer entsprechenden Präsentation der geleisteten Arbeiten (s. Modulprüfung).</p>
+<p>Leistungspunkte und Dauer<br>10 Leistungspunkte, Dauer zwei Semester</p>
+<p>Projektseminar (Projekt o. Seminar)<br>Erfolgreiche Realisierung und Dokumentation eines Projekts in Einzel- oder<br>Kleingruppenarbeit aus dem Themengebiet der Veranstaltung mit<br>zugehöriger schriftlicher Ausarbeitung im Umfang von 30 Stunden und im<br>Regelfall von 12 Seiten. Bei Anfertigung der Modulprüfung durch mehrere<br>Teilnehmer muss wie generell gewährleistet sein, dass die individuellen<br>Anteile erkennbar bleiben (z. B. durch Kennzeichnung in der<br>Dokumentation).</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_LTKE63B2">Modulhandbuch Texttechnologie und Computerlinguist.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XZ5RCH4N" class="item document">
+			<h2>Modulhandbuch Computerlinguistik / Bachelor: Nebenfach</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Bielefeld</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>de</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 10:15:51</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:48:53</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_6T46GMKP">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FXZ5RCH4N%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FXZ5RCH4N%22%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222013%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:48:50)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FL8TR5QN2%22%2C%22annotationKey%22%3A%222FB9RCXP%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B84.53%2C386.429%2C500.561%2C394.419%5D%2C%5B84.53%2C374.429%2C485.3%2C382.419%5D%2C%5B84.53%2C362.429%2C454.898%2C370.419%5D%2C%5B84.53%2C350.429%2C495.823%2C358.419%5D%2C%5B84.53%2C338.429%2C498.804%2C346.419%5D%2C%5B84.53%2C326.429%2C466.037%2C334.419%5D%2C%5B84.53%2C314.429%2C496.606%2C322.419%5D%2C%5B84.53%2C302.429%2C452.573%2C310.419%5D%2C%5B84.53%2C290.429%2C474.81%2C298.419%5D%2C%5B84.53%2C278.429%2C496.446%2C286.419%5D%2C%5B84.53%2C266.429%2C492.611%2C274.419%5D%2C%5B84.53%2C254.429%2C483.511%2C262.419%5D%2C%5B84.53%2C242.429%2C217.548%2C250.419%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FXZ5RCH4N%22%5D%2C%22locator%22%3A%2218%22%7D%7D">"Die Studierenden erhalten in diesem Modul in besonderer Weise Gelegenheit, erworbene Kenntnisse und Kompetenzen im Rahmen einer praxisbezogenen Problemstellung aktiv umsetzen. Sie lernen unter Anleitung, selbständig ein an aktuellen Forschungsfragen ausgerichtetes, eigenes Projekt durchzuführen. Konkretere Themenwahl und Ausformulieren einer dazugehörigen Fragestellung orientieren sich am Themengebiet, wie es Gegenstand der jeweils aktuell angebotenen Projektseminarveranstaltung ist. Neben vertieften veranstaltungsspezifischen, fachinhaltlichen Kenntnissen erwerben die Studierenden auf diese Weise auch erweiterte Kompetenzen in Projekt- und damit verbundener Zeitplanung, in der praxisorientierten Anwendung von Programmiertechniken, im Umgang mit weiteren technischen Hilfsmitteln und Analysetools sowie im Verfassen einer schriftlichen Projektdokumentation. Die Kompetenzen werden seminarbegleitend durch das Bearbeiten von Übungsaufgaben, das Präsentieren von Aufgabenbearbeitungen, das Referieren und/oder Diskutieren von wissenschaftlichen Texten und/oder Formaten mit vergleichbarem Arbeitsaufwand eingeübt und in ihrer Anwendung demonstriert. Mit dem Projekt demonstrieren die Studierenden, dass sie in der Lage sind, die im Rahmen der Veranstaltung erworbenen Kompetenzen miteinander verknüpfend selbständig einzusetzen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FXZ5RCH4N%22%5D%2C%22locator%22%3A%2218%22%2C%22itemData%22%3A%7B%22id%22%3A75520%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222013%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Bielefeld, 2013, p. 18</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_L8TR5QN2">Modulhandbuch Computerlinguistik  Bachelor Neben.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_25AYZKPH" class="item document">
+			<h2>Modulhandbuch Computerlinguistik / Bachelor: Nebenfach (fw) [FsB vom 21.05.2021]</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Bielefeld</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Sprache</th>
+						<td>de</td>
+					</tr>
+					<tr>
+					<th>Bibliothekskatalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:33:06</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>6.6.2023, 12:04:01</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_6QG8M5DR">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F25AYZKPH%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F25AYZKPH%22%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%20(fw)%20%5BFsB%20vom%2021.05.2021%5D%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222023%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 17:34:16)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6UFLDF2G%22%2C%22annotationKey%22%3A%22L8B4D9TY%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B278.767%2C338.429%2C498.804%2C346.419%5D%2C%5B84.53%2C326.429%2C466.037%2C334.419%5D%2C%5B84.53%2C314.429%2C496.606%2C322.419%5D%2C%5B84.53%2C302.429%2C450.416%2C310.419%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F25AYZKPH%22%5D%2C%22locator%22%3A%2218%22%7D%7D">"Neben vertieften veranstaltungsspezifischen, fachinhaltlichen Kenntnissen erwerben die Studierenden auf diese Weise auch erweiterte Kompetenzen in Projekt- und damit verbundener Zeitplanung, in der praxisorientierten Anwendung von Programmiertechniken, im Umgang mit weiteren technischen Hilfsmitteln und Analysetools sowie im Verfassen einer schriftlichen Projektdokumentation"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F25AYZKPH%22%5D%2C%22locator%22%3A%2218%22%2C%22itemData%22%3A%7B%22id%22%3A75726%2C%22type%22%3A%22document%22%2C%22language%22%3A%22de%22%2C%22source%22%3A%22Zotero%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20%2F%20Bachelor%3A%20Nebenfach%20(fw)%20%5BFsB%20vom%2021.05.2021%5D%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Bielefeld%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222023%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Bielefeld, 2023, p. 18</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_6UFLDF2G">Modulhandbuch Computerlinguistik  Bachelor Neben.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZAGVW5RT" class="item document">
+			<h2>Modulhandbuch Masterstudium Computing in the Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Otto-Friedrich Universität Bamberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:31:50</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:32:34</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_HVQ544ET">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZAGVW5RT%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZAGVW5RT%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Masterstudium%20Computing%20in%20the%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Otto-Friedrich%20Universit%C3%A4t%20Bamberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 17:31:53)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F7PTTDEZ6%22%2C%22annotationKey%22%3A%22L43ZUU9W%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2242%22%2C%22position%22%3A%7B%22pageIndex%22%3A41%2C%22rects%22%3A%5B%5B58.942%2C611.092%2C484.722%2C621.092%5D%2C%5B58.942%2C596.092%2C466.862%2C606.092%5D%2C%5B58.942%2C581.092%2C501.892%2C591.092%5D%2C%5B58.942%2C566.092%2C519.692%2C576.092%5D%2C%5B58.942%2C551.092%2C125.642%2C561.092%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZAGVW5RT%22%5D%2C%22locator%22%3A%2242%22%7D%7D">"Aufbauend auf den in den Vorlesungen und Übungen des Faches Mensch-Computer-Interaktion erworbenen Kenntnissen und Fertigkeiten wird in diesem Praktikum ein kleineres Projekt mit wissenschaftlichem Bezug in einer Gruppe umgesetzt. Dabei werden die Fähigkeiten im Bereich der Systementwicklung ebenso weiterentwickelt wie die Kompetenzen in der Projektdurchführung und in der Gruppenarbeit."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZAGVW5RT%22%5D%2C%22locator%22%3A%2242%22%2C%22itemData%22%3A%7B%22id%22%3A75723%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Masterstudium%20Computing%20in%20the%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Otto-Friedrich%20Universit%C3%A4t%20Bamberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Otto-Friedrich Universität Bamberg, 2022, p. 42</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_7PTTDEZ6">DE_Bamberg_MA_ComputingInTheHumanities_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3AF5LIB8" class="item document">
+			<h2>Masterstudiengang Digitale Methodik in den Geistes- und Kulturwissenschaften</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Johannes Gutenberg-Universität Mainz</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Hochschule Mainz – University of Applied Sciences</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:13:07</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:34:48</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_ZMJTFLKY">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Masterstudiengang%20Digitale%20Methodik%20in%20den%20Geistes-%20und%20Kulturwissenschaften%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Johannes%20Gutenberg-Universit%C3%A4t%20Mainz%22%7D%2C%7B%22family%22%3A%22Hochschule%20Mainz%20%E2%80%93%20University%20of%20Applied%20Sciences%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 11:33:37)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS6YVYMCA%22%2C%22annotationKey%22%3A%22NIFCQXNF%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B62.16%2C618.358%2C328.93%2C628.279%5D%2C%5B80.16%2C596.466%2C516.468%2C607.159%5D%2C%5B80.16%2C585.426%2C553.886%2C596.119%5D%2C%5B98.16%2C575.638%2C554.068%2C585.559%5D%2C%5B98.16%2C565.318%2C154.697%2C575.239%5D%2C%5B80.16%2C552.5%2C551.926%2C563.479%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%5D%2C%22locator%22%3A%2213%22%7D%7D">"Die Studierenden sollen nach erfolgreichem Abschluss des Moduls • die erlernten digitalen Methoden in konkretem Forschungs- und Entwicklungskontext angewendet haben; • als Gruppe gemeinsam eine innovative und die Möglichkeiten digitaler Kommunikation ausschöpfende Veranstaltung organisiert haben, in denen sie die Ergebnisse und Erfahrungen ihrer Praxisprojekte präsentieren und vermitteln • ihre Persönlichkeit in der Arbeit im beruflichem Umfeld und in anschließenden Teamarbeit weiterentwickelt haben."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%5D%2C%22locator%22%3A%2213%22%2C%22itemData%22%3A%7B%22id%22%3A7590%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Masterstudiengang%20Digitale%20Methodik%20in%20den%20Geistes-%20und%20Kulturwissenschaften%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Johannes%20Gutenberg-Universit%C3%A4t%20Mainz%22%7D%2C%7B%22family%22%3A%22Hochschule%20Mainz%20%E2%80%93%20University%20of%20Applied%20Sciences%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Johannes Gutenberg-Universität Mainz und Hochschule Mainz – University of Applied Sciences, 2016, p. 13</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS6YVYMCA%22%2C%22annotationKey%22%3A%22ADL8PVFR%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B62.16%2C539.602%2C86.151%2C548.45%5D%2C%5B62.16%2C524.758%2C554.011%2C534.679%5D%2C%5B62.16%2C514.438%2C531.952%2C524.359%5D%2C%5B62.16%2C504.118%2C554.165%2C514.039%5D%2C%5B62.16%2C493.798%2C344.835%2C503.719%5D%2C%5B62.16%2C483.478%2C553.93%2C493.399%5D%2C%5B62.16%2C473.158%2C444.877%2C483.079%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%5D%2C%22locator%22%3A%2213%22%7D%7D">"Inhalte Ein zusammenhängendes, insgesamt in der Regel 10-wöchiges Praxisprojekt an einer wissenschaftlichen Einrichtung, in dem die konkrete Umsetzung digitaler Methodik in geistes- und/oder kulturwissenschaftlichem Kontext praktiziert wird. Kooperative Konzeption einer öffentlichen Abschlussveranstaltung, die in Kooperation mit dem „Mainzer Zentrum für Digitalität in den Geistes- und Kulturwissenschaften“ durchgeführt wird. Identifizierung und Ausgestaltung ergebnisadäquater digitaler Kommunikationsformen der Ergebnisse der Praxisprojekte in Kooperation mit dem „Mainzer Zentrum für Digitalität in den Geistes- und Kulturwissenschaften“."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3AF5LIB8%22%5D%2C%22locator%22%3A%2213%22%2C%22itemData%22%3A%7B%22id%22%3A7590%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Masterstudiengang%20Digitale%20Methodik%20in%20den%20Geistes-%20und%20Kulturwissenschaften%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Johannes%20Gutenberg-Universit%C3%A4t%20Mainz%22%7D%2C%7B%22family%22%3A%22Hochschule%20Mainz%20%E2%80%93%20University%20of%20Applied%20Sciences%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Johannes Gutenberg-Universität Mainz und Hochschule Mainz – University of Applied Sciences, 2016, p. 13</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_T985H3GI">Bechstein - Ordnung für die Prüfung im Masterstudiengang Digit.pdf					</li>
+					<li id="item_S6YVYMCA">DE_Mainz_MA_DMGK_2016.pdf					</li>
+					<li id="item_9X7YJTXC">DH_Studiengang-Mainz-Modulhandbuch.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2GETIW79" class="item document">
+			<h2>Modulhandbuch BA Computerlinguistik</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Heinrich-Heine-Universität Düsseldorf</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>26.8.2020, 23:54:08</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>7.9.2023, 11:49:00</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>kategorisiert</li>
+					<li>Modulhandbuch</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_F392HHMZ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20BA%20Computerlinguistik%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Heinrich-Heine-Universit%C3%A4t%20D%C3%BCsseldorf%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:28:04)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5HW2NXIB%22%2C%22annotationKey%22%3A%22Z9AQFULM%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%22318%22%2C%22position%22%3A%7B%22pageIndex%22%3A358%2C%22rects%22%3A%5B%5B67.8%2C565.862%2C185.022%2C576.39%5D%2C%5B67.8%2C554.342%2C536.859%2C564.87%5D%2C%5B67.8%2C542.938%2C529.061%2C553.466%5D%2C%5B67.8%2C531.414%2C531.372%2C541.942%5D%2C%5B67.8%2C508.502%2C554.997%2C519.03%5D%2C%5B67.8%2C496.979%2C551.158%2C507.506%5D%2C%5B67.8%2C485.462%2C341.751%2C495.99%5D%2C%5B67.8%2C473.582%2C94.314%2C484.11%5D%2C%5B67.8%2C462.062%2C369.077%2C472.59%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%5D%2C%22locator%22%3A%22318%22%7D%7D">"X: Praxismodul<br><br>Lernergebnisse/Kompetenzen Praktikum: Das Praktikum soll die Studierenden durch konkrete Aufgabenstellungen und praktische Mitarbeit exemplarisch an die beruflichen Tätigkeiten einer Computerlinguistin / eines Computerlinguisten heranführen. Es soll dazu dienen, die im bisherigen Studium erworbenen Kenntnisse und Fähigkeiten anzuwenden und die Berufswirklichkeit im In- oder Ausland kennen zu lernen. Teamprojekt: Lernen selbstständigen wissenschaftlichen Arbeitens oder Anwendens wissenschaftlicher Methoden und Ergebnisse auf praktische Probleme, Stärkung sozialer Kompetenzen und Teamfähigkeiten durch Gruppenarbeit. Fähigkeit zum Projektmanagement (Projektdefinition, Planung, Durchführung, Kontrolle, Projektabschluss etc.). Inhalte Praktikum und Teamprojekt haben einen einschlägig computerlinguistischen Inhalt."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%5D%2C%22locator%22%3A%22318%22%2C%22itemData%22%3A%7B%22id%22%3A7514%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20BA%20Computerlinguistik%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Heinrich-Heine-Universit%C3%A4t%20D%C3%BCsseldorf%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Heinrich-Heine-Universität Düsseldorf, 2018, p. 318</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F5HW2NXIB%22%2C%22annotationKey%22%3A%22S7ZB5ERC%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%22419%22%2C%22position%22%3A%7B%22pageIndex%22%3A459%2C%22rects%22%3A%5B%5B57.12%2C601.705%2C174.414%2C612.36%5D%2C%5B57.12%2C590.185%2C239.924%2C600.84%5D%2C%5B57.12%2C578.422%2C422.47%2C589.077%5D%2C%5B57.12%2C566.427%2C467.09%2C577.081%5D%2C%5B57.12%2C554.432%2C401.651%2C565.086%5D%2C%5B57.12%2C542.436%2C418.514%2C553.091%5D%2C%5B57.13%2C530.441%2C499.512%2C541.096%5D%2C%5B57.13%2C518.446%2C290.825%2C529.101%5D%2C%5B57.12%2C506.425%2C441.526%2C517.08%5D%2C%5B57.12%2C494.185%2C83.787%2C504.84%5D%2C%5B57.12%2C482.665%2C564.047%2C493.32%5D%2C%5B57.12%2C471.145%2C564.117%2C481.8%5D%2C%5B57.12%2C459.625%2C145.265%2C470.28%5D%2C%5B57.12%2C448.345%2C564.196%2C459%5D%2C%5B57.12%2C436.825%2C564.183%2C447.48%5D%2C%5B57.12%2C425.305%2C308.637%2C435.96%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%5D%2C%22locator%22%3A%22419%22%7D%7D">"Praxis der Team- und Organisationsentwicklung<br><br>Lernergebnisse/Kompetenzen Mit Abschluss des Moduls sollen die Studierenden – Aufbau und Entwicklung von Organisationen und Systemen beschreiben und analysieren können – Aufbau und Entwicklung von Kommunikation und Kooperation in Teams beschreiben und analysieren können – Methoden der Team-, System- und Organisationsdiagnostik kennen und anwenden können – Lernarrangements in der Fort- und Weiterbildung systematisch und zielgeführt gestalten können – Lern-, Arbeits- und Entwicklungsprozesse von Gruppen und Organisationen methodisch gestalten und steuern können – Lern-, Arbeits- und Entwicklungsprozesse evaluieren können – Methoden des Selbstmanagements (Umgang mit Zeit, mit Stress usw.) kennen und anwenden können Inhalte Im ersten Modulbereich konzentrieren sich die Kurse auf die zentralen Aspekte der Team- und Organisationsentwicklung wie z.B. „Kommunikation und Kooperation im Team“, „Teamentwicklung und Teammanagement“, „Gestaltung von Trainingsseminaren“ oder Organisationsberatung“. Im zweiten Bereich stehen die „Softskills“ der Team- und Organisationsentwicklung in Mittelpunkt. Die Kurse des zweiten Bereichs behandeln daher Themen des Prozess- und Selbstmanagements wie z.B. „Moderation“, „Projektmanagement“, Evaluation und Qualitätsmanagement“, „Konfliktmanagement“, „Zeitmanagement“ oder „Stressmanagement“."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2GETIW79%22%5D%2C%22locator%22%3A%22419%22%2C%22itemData%22%3A%7B%22id%22%3A7514%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20BA%20Computerlinguistik%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Heinrich-Heine-Universit%C3%A4t%20D%C3%BCsseldorf%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Heinrich-Heine-Universität Düsseldorf, 2018, p. 419</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_5HW2NXIB">DE_Düsseldorf_BA_Computerlinguistik_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_IVAH9FR3" class="item document">
+			<h2>Modulverzeichnis zu der Prüfungs- und Studienordnung für den konsekutiven Master-Studiengang &quot;Digital Humanities&quot;</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Georg-August-Universität Göttingen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>20.3.2020, 09:17:20</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 13:32:28</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_NSJ2XN7L">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20zu%20der%20Pr%C3%BCfungs-%20und%20Studienordnung%20f%C3%BCr%20den%20konsekutiven%20Master-Studiengang%20%5C%22Digital%20Humanities%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 13:32:16)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F4KRJ85D4%22%2C%22annotationKey%22%3A%22JGDR9P4M%22%2C%22color%22%3A%22%23ffff00%22%2C%22pageLabel%22%3A%222113%22%2C%22position%22%3A%7B%22pageIndex%22%3A0%2C%22rects%22%3A%5B%5B70.944%2C484.145%2C201.172%2C494.357%5D%2C%5B70.944%2C465.065%2C431.708%2C475.277%5D%2C%5B70.944%2C446.072%2C269.166%2C456.427%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%5D%2C%22locator%22%3A%222113%22%7D%7D">"Philosophische Fakultät: Modulverzeichnis zur Prüfungs- und Studienordnung für den konsekutiven Master-Studiengang „Digital Humanities“"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%5D%2C%22locator%22%3A%222113%22%2C%22itemData%22%3A%7B%22id%22%3A7578%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20zu%20der%20Pr%C3%BCfungs-%20und%20Studienordnung%20f%C3%BCr%20den%20konsekutiven%20Master-Studiengang%20%5C%22Digital%20Humanities%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Georg-August-Universität Göttingen, 2020, p. 2113</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F4KRJ85D4%22%2C%22annotationKey%22%3A%22UKK2NVR5%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%222150%22%2C%22position%22%3A%7B%22pageIndex%22%3A37%2C%22rects%22%3A%5B%5B59.192%2C504.169%2C444.552%2C514.169%5D%2C%5B59.192%2C489.169%2C292.622%2C499.169%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%5D%2C%22locator%22%3A%222150%22%7D%7D">"• besitzen die Fähigkeit komplexe Aufgabenstellungen in Teilaufgaben zu untergliedern und (im Team) vielseitige Lösungsansätze zu finden."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FIVAH9FR3%22%5D%2C%22locator%22%3A%222150%22%2C%22itemData%22%3A%7B%22id%22%3A7578%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20zu%20der%20Pr%C3%BCfungs-%20und%20Studienordnung%20f%C3%BCr%20den%20konsekutiven%20Master-Studiengang%20%5C%22Digital%20Humanities%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Georg-August-Universität Göttingen, 2020, p. 2150</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_4KRJ85D4">DH-Studiengang_Göttingen.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2LAQFMEB" class="item document">
+			<h2>Modulverzeichnis zu der Prüfungs- und Studienordnung für den konsekutiven Master-Studiengang &quot;Angewandte Informatik&quot;</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Georg-August-Universität Göttingen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:56:21</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 13:34:45</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_N9XIYLEE">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2LAQFMEB%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2LAQFMEB%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20zu%20der%20Pr%C3%BCfungs-%20und%20Studienordnung%20f%C3%BCr%20den%20konsekutiven%20Master-Studiengang%20%5C%22Angewandte%20Informatik%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 13:34:40)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTUCM964J%22%2C%22annotationKey%22%3A%22D5Z3SA78%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%221818%22%2C%22position%22%3A%7B%22pageIndex%22%3A319%2C%22rects%22%3A%5B%5B59.192%2C659.769%2C444.922%2C669.769%5D%2C%5B59.192%2C644.769%2C447.682%2C654.769%5D%2C%5B59.192%2C629.769%2C270.412%2C639.769%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2LAQFMEB%22%5D%2C%22locator%22%3A%221818%22%7D%7D">"Erwerb von Kompetenzen im Bereich der projektbezogenen und forschungsorientierten Teamarbeit und des Projektmanagements, ggf. Erwerb von Fähigkeiten beim Umsetzen theoretischer Konzepte in praktische Lösungen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2LAQFMEB%22%5D%2C%22locator%22%3A%221818%22%2C%22itemData%22%3A%7B%22id%22%3A7598%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20zu%20der%20Pr%C3%BCfungs-%20und%20Studienordnung%20f%C3%BCr%20den%20konsekutiven%20Master-Studiengang%20%5C%22Angewandte%20Informatik%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222020%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Georg-August-Universität Göttingen, 2020, p. 1818</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_TUCM964J">DE_Göttingen_MA_SpecialisationDH_2020.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TVLQ6FRP" class="item document">
+			<h2>Modulhandbuch MA Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Friedrich-Alexander-Universität Erlangen-Nürnberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:56:00</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 14:46:56</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_D5WEDNL5">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20MA%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Friedrich-Alexander-Universit%C3%A4t%20Erlangen-N%C3%BCrnberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 14:45:59)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3W68RSDR%22%2C%22annotationKey%22%3A%224CTNZZ39%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B69.085%2C627.427%2C550.998%2C639.874%5D%2C%5B213.492%2C614.833%2C305.557%2C627.16%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%5D%2C%22locator%22%3A%2218%22%7D%7D">"Inhalt Die Studierenden bearbeiten komplexe Fragestellungen im Team und in freier Zeiteinteilung."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%5D%2C%22locator%22%3A%2218%22%2C%22itemData%22%3A%7B%22id%22%3A7599%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20MA%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Friedrich-Alexander-Universit%C3%A4t%20Erlangen-N%C3%BCrnberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Friedrich-Alexander-Universität Erlangen-Nürnberg, 2018, p. 18</span>)</span></p>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3W68RSDR%22%2C%22annotationKey%22%3A%225DA9LLL8%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2218%22%2C%22position%22%3A%7B%22pageIndex%22%3A17%2C%22rects%22%3A%5B%5B213.492%2C595.644%2C295.161%2C607.971%5D%2C%5B230.764%2C576.392%2C499.016%2C589.14%5D%2C%5B230.775%2C557.557%2C534.071%2C570.305%5D%2C%5B248.773%2C545.386%2C551.255%2C557.714%5D%2C%5B248.773%2C532.795%2C546.513%2C545.122%5D%2C%5B248.762%2C520.083%2C395.414%2C532.411%5D%2C%5B230.775%2C500.828%2C549.054%2C513.576%5D%2C%5B248.773%2C488.657%2C539.75%2C500.985%5D%2C%5B248.773%2C476.066%2C534.572%2C488.393%5D%2C%5B248.773%2C463.475%2C541.601%2C475.802%5D%2C%5B248.773%2C450.763%2C547.744%2C463.09%5D%2C%5B248.773%2C438.173%2C317.089%2C450.5%5D%2C%5B230.764%2C419.301%2C552.711%2C431.779%5D%2C%5B248.756%2C406.86%2C547.165%2C419.187%5D%2C%5B248.755%2C394.27%2C402.619%2C406.597%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%5D%2C%22locator%22%3A%2218%22%7D%7D">"Die Studierenden - bearbeiten eigenständig Inhalte und ihre Anwendung. - werden befähigt, komplexe Fragestellungen zu definieren, zu analysieren und Lösungsvorschläge bzw. Ergebnisse zu erarbeiten und diese in längerer schriftlicher Form in argumentativ-logischer Reihung zu präsentieren. - werden durch die Bearbeitung komplexer Fragestellungen, auch in Zusammenarbeit mit auswärtigen Partnern, zum Projektmanagement in Praxis und Wissenschaft angeleitet. Das Projekt wird im Team bearbeitet und schult in den Herausforderungen, die in solchermaßen gestalteten realweltlichen Arbeitsbedingungen existieren. - lernen anhand der einjährigen Projektarbeit sich selbst zu organisieren sowie die Ergebnispräsentation zu strukturieren und über den Projektverlauf zu reflektieren"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FTVLQ6FRP%22%5D%2C%22locator%22%3A%2218%22%2C%22itemData%22%3A%7B%22id%22%3A7599%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20MA%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Friedrich-Alexander-Universit%C3%A4t%20Erlangen-N%C3%BCrnberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Friedrich-Alexander-Universität Erlangen-Nürnberg, 2018, p. 18</span>)</span></p>
+</div></div>
+					</li>
+					<li id="item_JI6PC5PP">
+<div><p>Teamprojekt<br>Team Project</p>
+<p>Die Studierenden bearbeiten komplexe Fragestellungen im Team und in<br>freier Zeiteinteilung.</p>
+<p>Lernziele und<br>Kompetenzen</p>
+<p>Die Studierenden<br>- bearbeiten eigenständig Inhalte und ihre Anwendung.<br>- werden befähigt, komplexe Fragestellungen zu definieren, zu<br>analysieren und Lösungsvorschläge bzw. Ergebnisse zu erarbei-<br>ten und diese in längerer schriftlicher Form in argumentativ-logi-<br>scher Reihung zu präsentieren.<br>- werden durch die Bearbeitung komplexer Fragestellungen, auch<br>in Zusammenarbeit mit auswärtigen Partnern, zum Projektma-<br>nagement in Praxis und Wissenschaft angeleitet. Das Projekt<br>wird im Team bearbeitet und schult in den Herausforderungen,<br>die in solchermaßen gestalteten realweltlichen Arbeitsbedingun-<br>gen existieren.<br>- lernen anhand der einjährigen Projektarbeit sich selbst zu organi-<br>sieren sowie die Ergebnispräsentation zu strukturieren und über<br>den Projektverlauf zu reflektieren</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_3W68RSDR">DE_Erlangen_MA_DigitalHumanities_2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_P4MMGD4C" class="item document">
+			<h2>BA-Digitale Geistes- und Sozialwissenschaften Modulhandbuch</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Friedrich-Alexander-Universität Erlangen-Nürnberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:55:41</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>25.7.2023, 17:04:27</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_2M7896TJ">
+<div><p>Praxis-/ Projektmodul</p>
+<p>Das Modul vermittelt wahlweise (a) praktische Erfahrungen in einem<br>studiengangbezogenen Berufsfeld oder (b) in einem entsprechenden<br>anwendungsorientierten Projekt (Projektseminar).<br>Die Wahlentscheidung treffen die Studierenden nach individuellen<br>Schwerpunktsetzungen.<br>(a) Mögliche Praktika können u.a. in folgenden Berufsfeldern absolviert<br>werden:<br>- im Verlagswesen/Publizistik (E-Publishing und digitale Märkte),<br>- Journalismus (Online-Medien, Social Media),<br>- Museum und Archiv (Bild-/Werkannotation, Datenbanken),<br>- Öffentlichkeitsarbeit und Kulturvermittlung (Internet und neue Me-<br>dien),<br>- Erwachsenenbildung (E-Learning).<br>(b) Projektseminare beziehen sich auf die studiengangspezifischen<br>Schwerpunkte Sprache und Text, Gesellschaft und Raum, Bild und Me-<br>dien. Anhand von exemplarischen Projekten wird die selbständige An-<br>wendung und Entwicklung von informatischen Werkzeugen in den<br>Geistes- und Sozialwissenschaften erprobt.</p>
+<p>&nbsp;</p>
+<p>Lernziele und<br>Kompetenzen</p>
+<p>Die Studierenden erwerben (je nach individueller Wahl gem. „Inhalt“)<br>entweder<br>(a) Kenntnisse über die Aufgaben und die Organisation einer selbstge-<br>wählten inner- oder außeruniversitären Einrichtung aus einem einschlä-<br>gigen Berufsfeld (Praktikum) oder<br>(b) im Bereich des (Forschungs-)Projektmanagements (Projekt).<br>Dabei entwickeln die Fähigkeit und Bereitschaft, Aufgaben- und Prob-<br>lemstellungen, wie sie in einem Anwendungsbereich digitaler Geistes-<br>und Sozialwissenschaften auftreten, in den jeweiligen Kontexten sach-<br>lich angemessen und eigenständig unter Anleitung zu bearbeiten und<br>zu lösen und die Ergebnisse zu präsentieren und umzusetzen.</p>
+<p>&nbsp;</p>
+<p>Fachkompetenz<br>Anwenden<br>Die Studierenden wenden ihre im Studienverlauf erworbenen Fach -,<br>Methoden-, Informations-, Kommunikations- und Präsentationskom p e-<br>tenzen in berufspraktischen Betätigungsfeldern (a) oder in eher for-<br>schungsnahen Projekten (b) an (Transferleistung). an.<br>Lern- bzw. Methodenkompetenz-<br>Die Studierenden<br>- können Arbeitsschritte bei der Lösung von Problemen im berufli-<br>chen Kontext (a) bzw. im wissenschaftlichen Arbeiten (b) zielgerich-<br>tet planen und durchführen,<br>- planen eigenständig unter Anleitung (b) ein wissenschaftliches Pro-<br>jekt, führen dies durch und dokumentieren und präsentieren das Er-<br>gebnis oder (a) tragen verantwortlich dazu bei, angemessene infor-<br>matische Werkzeuge für Anwendungen an ausgewählten Arbeits-<br>plätzen zu identifizieren oder zu entwickeln und umzusetzen.<br>Selbstkompetenz (betrifft a und b)<br>Die Studierenden<br>- erweitern aufgrund des verantwortlichen Planens der Projektarbeit<br>bzw. der Aufgabestellung ihre Selbstkompetenz;<br>- schätzen ihre eigenen Stärken und Schwächen ein und erarbeiten<br>ein Bild ihrer eigenen Entwicklung im zukünftigen beruflichen und<br>sozialen Kontext;<br>- können Ziele für die eigene Entwicklung definieren sowie eigene<br>Schwächen reflektieren und die eigene Entwicklung planen.<br>Sozialkompetenz (betrifft a und b)<br>Die Studierenden<br>- arbeiten gemeinsam mit anderem in einem Projekt oder an einer<br>Aufgabe und integrieren das eigene Tun in die Arbeit anderer;<br>- können in Grippen kooperativ und verantwortlich arbeiten.</p>
+<p>&nbsp;</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_MI4IKV87">DE_Erlangen_BA_DigitaleGeistes-UndSozialwissenschaften_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8CGMK88Y" class="item document">
+			<h2>Humanités digitales</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>École polytechnique fédérale de Lausanne</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 14:39:03</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 14:40:54</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_HM54SCPZ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Humanit%C3%A9s%20digitales%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22%C3%89cole%20polytechnique%20f%C3%A9d%C3%A9rale%20de%20Lausanne%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 14:40:45)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F4FF2M28D%22%2C%22annotationKey%22%3A%22T4PZCZFB%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%221%22%2C%22position%22%3A%7B%22pageIndex%22%3A0%2C%22rects%22%3A%5B%5B56.692%2C507.028%2C102.262%2C517.028%5D%2C%5B56.692%2C491.246%2C535.6%2C500.246%5D%2C%5B56.692%2C479.921%2C516.376%2C488.921%5D%2C%5B56.692%2C468.596%2C160.246%2C477.596%5D%2C%5B56.692%2C441.803%2C94.462%2C451.803%5D%2C%5B56.692%2C426.021%2C448.885%2C435.021%5D%2C%5B56.692%2C414.696%2C244.747%2C423.696%5D%2C%5B56.692%2C403.371%2C210.745%2C412.371%5D%2C%5B56.692%2C392.046%2C282.772%2C401.046%5D%2C%5B56.692%2C380.721%2C303.31%2C389.721%5D%2C%5B56.692%2C358.071%2C310.51%2C367.071%5D%2C%5B56.692%2C346.746%2C233.254%2C355.746%5D%2C%5B56.692%2C335.421%2C336.817%2C344.421%5D%2C%5B56.692%2C324.096%2C230.464%2C333.096%5D%2C%5B56.692%2C297.303%2C165.062%2C307.303%5D%2C%5B62.361%2C281.053%2C146.831%2C291.053%5D%2C%5B62.361%2C266.803%2C227.971%2C276.803%5D%2C%5B56.692%2C225.553%2C150.602%2C235.553%5D%2C%5B56.692%2C209.771%2C270.325%2C218.771%5D%2C%5B63.692%2C195.446%2C455.543%2C204.446%5D%2C%5B63.692%2C181.121%2C231.92%2C190.121%5D%2C%5B63.692%2C166.796%2C341.477%2C175.796%5D%2C%5B63.692%2C152.471%2C138.365%2C161.471%5D%2C%5B56.692%2C110.678%2C140.632%2C120.678%5D%2C%5B56.692%2C803.931%2C185.743%2C812.931%5D%2C%5B56.692%2C32.907%2C528.573%2C41.907%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%5D%2C%22locator%22%3A%221%22%7D%7D">"Summary The engineering internship is an integral part of the curriculum for master's students. They join companies in Switzerland or abroad to carry out either an internship or their master thesis project in a field of activity where their skils of future engineers are highlighted. Content Internships are an important experience for students enabling them to achieve the following goals : - Immerse themselves in the professional world - Highlight the importance of teamwork - Consider the imperatives of a company in its processes - Put into practice the knowledge acquired from the study plan 3 types of internships are available within the Master's program: - 8 weeks internship during the summer only - 6 months (long) internship : The student is on leave for one semester - Master's project in the industry (25 weeks) Learning Prerequisites Required courses Having completed two full semesters. Learning Outcomes By the end of the course, the student must be able to: • Take into consideration the importance of legal procedures and the ethical code of the profession • Transcribe effectively and be understood • Assess / Evaluate the level of acquired skills and plan the next goals • Manage priorities Transversal skills 2022-2023 COURSE BOOKLET Engineering internship credited with Master Project (master in Digital Humanities) Page 1 /"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%5D%2C%22locator%22%3A%221%22%2C%22itemData%22%3A%7B%22id%22%3A75588%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Humanit%C3%A9s%20digitales%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22%C3%89cole%20polytechnique%20f%C3%A9d%C3%A9rale%20de%20Lausanne%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">École polytechnique fédérale de Lausanne, 2022, p. 1</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F4FF2M28D%22%2C%22annotationKey%22%3A%225AJJWT6K%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%222%22%2C%22position%22%3A%7B%22pageIndex%22%3A1%2C%22rects%22%3A%5B%5B63.692%2C771.985%2C262.934%2C780.985%5D%2C%5B63.692%2C757.66%2C444.518%2C766.66%5D%2C%5B63.692%2C743.335%2C439.748%2C752.335%5D%2C%5B63.692%2C729.01%2C348.479%2C738.01%5D%2C%5B63.692%2C714.685%2C388.007%2C723.685%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%5D%2C%22locator%22%3A%222%22%7D%7D">"• Use a work methodology appropriate to the task. • Communicate effectively, being understood, including across different languages and cultures. • Evaluate one's own performance in the team, receive and respond appropriately to feedback. • Respect relevant legal guidelines and ethical codes for the profession. • Take account of the social and human dimensions of the engineering profession"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F8CGMK88Y%22%5D%2C%22locator%22%3A%222%22%2C%22itemData%22%3A%7B%22id%22%3A75588%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Humanit%C3%A9s%20digitales%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22%C3%89cole%20polytechnique%20f%C3%A9d%C3%A9rale%20de%20Lausanne%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">École polytechnique fédérale de Lausanne, 2022, p. 2</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_4FF2M28D">!GEDPUBLICREPORTS.pdf					</li>
+					<li id="item_H5DRFAAZ">CH_Lausanne_MA_m.ScienceDH_2022.pdf					</li>
+				</ul>
+			</li>
+
+		</ul>
+	</body>
+</html>

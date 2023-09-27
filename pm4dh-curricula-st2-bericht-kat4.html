@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Zotero-Bericht</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg=="/>
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_Z73FPSII" class="item document">
+			<h2>MA en Humanités Numériques, programme commun &apos;Cultures, sociétés et humanités numériques&apos;</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Université de Lausanne</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:52:22</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 15:51:29</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_52Q62HMX">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZ73FPSII%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZ73FPSII%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22MA%20en%20Humanit%C3%A9s%20Num%C3%A9riques%2C%20programme%20commun%20'Cultures%2C%20soci%C3%A9t%C3%A9s%20et%20humanit%C3%A9s%20num%C3%A9riques'%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A9%20de%20Lausanne%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:28:09)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FFPEZ2D55%22%2C%22annotationKey%22%3A%2236ZLRWRX%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2210%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B59.942%2C136.617%2C214.958%2C151.017%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZ73FPSII%22%5D%2C%22locator%22%3A%2210%22%7D%7D">"Einführungskolloquium mit Projektarbeit"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZ73FPSII%22%5D%2C%22locator%22%3A%2210%22%2C%22itemData%22%3A%7B%22id%22%3A7457%2C%22type%22%3A%22document%22%2C%22title%22%3A%22MA%20en%20Humanit%C3%A9s%20Num%C3%A9riques%2C%20programme%20commun%20'Cultures%2C%20soci%C3%A9t%C3%A9s%20et%20humanit%C3%A9s%20num%C3%A9riques'%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A9%20de%20Lausanne%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Université de Lausanne, 2022, p. 10</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_FPEZ2D55">CH_Lausanne_MA_M.ArtsDH_2016.pdf					</li>
+					<li id="item_KWVX5CMM">Structure_d&apos;un_plan_d&apos;étude.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DC3DTFEQ" class="item document">
+			<h2>Modulhandbuch für das Studienfach Digital Humanities als Bachelor-Hauptfach</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Würzburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:15:27</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:54:50</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_359J6AIP">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDC3DTFEQ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDC3DTFEQ%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20als%20Bachelor-Hauptfach%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:23:41)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDXQIQHWX%22%2C%22annotationKey%22%3A%22IGAWYHM6%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B74.366%2C582.94%2C429.216%2C594.27%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDC3DTFEQ%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Praktische Umsetzung des im Studiengang Digital Humanities erworbenen Wissens."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FDC3DTFEQ%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A7582%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20als%20Bachelor-Hauptfach%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Würzburg, 2018, p. 12</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_DXQIQHWX">DE_Würzburg_BA_DigitalHumanities_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NU9DNRQN" class="item document">
+			<h2>Modulhandbuch für das Studienfach Digital Humanities als Fach im 2-Fächer-Bachelor</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Würzburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 10:51:09</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:54:47</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_64MXRQSY">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNU9DNRQN%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNU9DNRQN%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20als%20Fach%20im%202-F%C3%A4cher-Bachelor%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:24:09)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FV7GFS2YL%22%2C%22annotationKey%22%3A%22QSP5KWKD%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2212%22%2C%22position%22%3A%7B%22pageIndex%22%3A11%2C%22rects%22%3A%5B%5B74.366%2C582.94%2C429.216%2C594.27%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNU9DNRQN%22%5D%2C%22locator%22%3A%2212%22%7D%7D">"Praktische Umsetzung des im Studiengang Digital Humanities erworbenen Wissens."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FNU9DNRQN%22%5D%2C%22locator%22%3A%2212%22%2C%22itemData%22%3A%7B%22id%22%3A75549%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20f%C3%BCr%20das%20Studienfach%20Digital%20Humanities%20als%20Fach%20im%202-F%C3%A4cher-Bachelor%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20W%C3%BCrzburg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222018%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Würzburg, 2018, p. 12</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_V7GFS2YL">DE_Würzburg_BA_75CPNFDH_2018.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_95S34EX2" class="item document">
+			<h2>Studiengang Editions- und Dokumentwissenschaft mit dem Abschluss Master of Arts</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Wuppertal</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>17.5.2023, 13:55:56</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>17.5.2023, 13:58:59</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_T6EL2BA2">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Studiengang%20Editions-%20und%20Dokumentwissenschaft%20mit%20dem%20Abschluss%20Master%20of%20Arts%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Wuppertal%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(17.5.2023, 13:58:42)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36MYSR4W%22%2C%22annotationKey%22%3A%22MJ6A37UF%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%229%22%2C%22position%22%3A%7B%22pageIndex%22%3A8%2C%22rects%22%3A%5B%5B131.274%2C692.36%2C184.459%2C707.887%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%5D%2C%22locator%22%3A%229%22%7D%7D">"Praktikum"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%5D%2C%22locator%22%3A%229%22%2C%22itemData%22%3A%7B%22id%22%3A75647%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Studiengang%20Editions-%20und%20Dokumentwissenschaft%20mit%20dem%20Abschluss%20Master%20of%20Arts%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Wuppertal%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Wuppertal, 2022, p. 9</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36MYSR4W%22%2C%22annotationKey%22%3A%224TIAF2ZG%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2219%22%2C%22position%22%3A%7B%22pageIndex%22%3A18%2C%22rects%22%3A%5B%5B134.888%2C561.855%2C543.559%2C571.355%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%5D%2C%22locator%22%3A%2219%22%7D%7D">"Projektplanung und Workflowmanagement bei der Digitalisierung von Objekten und Sammlungen"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F95S34EX2%22%5D%2C%22locator%22%3A%2219%22%2C%22itemData%22%3A%7B%22id%22%3A75647%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Studiengang%20Editions-%20und%20Dokumentwissenschaft%20mit%20dem%20Abschluss%20Master%20of%20Arts%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Wuppertal%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Wuppertal, 2022, p. 19</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_36MYSR4W">DE_Wuppertal_MA_EditDokuWiss_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_BM5ADE2D" class="item document">
+			<h2>Curriculum für das Masterstudium Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Wien</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:11:25</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:12:53</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_2DX7LXRF">A_Wien_MA_DigitalHumanities_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TJDGQDZ5" class="item document">
+			<h2>Ordnung der Universität Trier für die Prüfung im Masterstudiengang Computerlinguistik</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Trier</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:14:19</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:03:34</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_GDRAQ9U4">DE_Trier_MA_1FAch_2FachComputerlinguistik_2016.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GLAUFPQ4" class="item document">
+			<h2>Ordnung der Universität Trier für die Prüfung im Bachelorstudiengang Computerlinguistik (Haupt- und Nebenfach)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Trier</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2015</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:14:00</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:03:34</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_S5UWL57A">DE_Trier_BA_Computerlinguistik_2015.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_VCNX3IK9" class="item document">
+			<h2>Bachelorstudiengang Sprache, Technologie, Medien</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Trier</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 10:59:23</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:02:02</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_2KSLHBRI">DE_Trier_BA_SpracheTechnologieMedien_2022.pdf					</li>
+					<li id="item_WQ4RBTNC">Vorläufige_Studienordnung.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_G7AVI4MP" class="item document">
+			<h2>Modulhandbuch Studiengang Bachelor of Science Maschinelle Sprachverarbeitung</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Stuttgart</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 11:09:17</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:31:52</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_S2Z7SBWQ">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG7AVI4MP%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG7AVI4MP%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Bachelor%20of%20Science%20Maschinelle%20Sprachverarbeitung%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 11:31:37)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FZ82DFKAB%22%2C%22annotationKey%22%3A%229CHLRGCZ%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2233%22%2C%22position%22%3A%7B%22pageIndex%22%3A32%2C%22rects%22%3A%5B%5B255.117%2C519.623%2C550.247%2C529.623%5D%2C%5B255.117%2C507.623%2C549.137%2C517.623%5D%2C%5B255.117%2C495.623%2C509.657%2C505.623%5D%2C%5B255.117%2C483.623%2C501.907%2C493.623%5D%2C%5B255.117%2C471.623%2C529.137%2C481.623%5D%2C%5B255.117%2C459.623%2C550.247%2C469.623%5D%2C%5B255.117%2C447.623%2C530.237%2C457.623%5D%2C%5B255.117%2C435.623%2C450.747%2C445.623%5D%2C%5B255.117%2C423.623%2C551.907%2C433.623%5D%2C%5B255.117%2C411.623%2C531.907%2C421.623%5D%2C%5B255.117%2C399.623%2C473.537%2C409.623%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG7AVI4MP%22%5D%2C%22locator%22%3A%2233%22%7D%7D">"Ziel ist die Gewinnung von Praxis in den Bereichen Forschung und Entwicklung durch Arbeit an einer größeren zusammenhängenden relevanten Problemstellung aus dem Bereich Maschinelle Sprachverarbeitung. Die Studierenden sind in der Lage, theoretische Vorlesungsinhalte anzuwenden und in der Praxis umzusetzen. Sie ergänzen die im Studium erworbenen Kenntnisse durch Erfahrungen mit Praxisbezug und gewinnen Einblicke in Tätigkeitsfelder von Computerlinguist*innen. Die Studierenden entwickeln und erweitern zudem ihre Fähigkeiten in den Bereichen Kommunikation, Präsentation, Strukturierung komplexer Zusammenhänge und Problemlösung."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FG7AVI4MP%22%5D%2C%22locator%22%3A%2233%22%2C%22itemData%22%3A%7B%22id%22%3A75563%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Studiengang%20Bachelor%20of%20Science%20Maschinelle%20Sprachverarbeitung%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Stuttgart%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Stuttgart, 2022, p. 33</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_Z82DFKAB">DE_Stuttgart_BA_MaschinelleSprachverarbeitung_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_PYIHHSDU" class="item document">
+			<h2>Modulhandbuch Informationswissenschaft MA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Regensburg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2012</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 16:48:49</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 16:53:04</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_YNB3LXGD">DE_Regensburg_MA_InfoWissenschaften_2012.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_J6D4P5CA" class="item document">
+			<h2>Studienordnung für den Bachelorstudiengang Digital Humanities an der Universität Leipzig</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Leipzig</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 22:12:47</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 11:38:22</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_KLYDD9WB">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FJ6D4P5CA%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FJ6D4P5CA%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Studienordnung%20f%C3%BCr%20den%20Bachelorstudiengang%20Digital%20Humanities%20an%20der%20Universit%C3%A4t%20Leipzig%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Leipzig%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 11:37:46)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FRBJM8IFQ%22%2C%22annotationKey%22%3A%22964FNBRS%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%227%22%2C%22position%22%3A%7B%22pageIndex%22%3A6%2C%22rects%22%3A%5B%5B43.44%2C266.75%2C142.678%2C275.75%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FJ6D4P5CA%22%5D%2C%22locator%22%3A%227%22%7D%7D">"Praktikum "Projektarbeit""</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FJ6D4P5CA%22%5D%2C%22locator%22%3A%227%22%2C%22itemData%22%3A%7B%22id%22%3A7531%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Studienordnung%20f%C3%BCr%20den%20Bachelorstudiengang%20Digital%20Humanities%20an%20der%20Universit%C3%A4t%20Leipzig%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Leipzig%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222016%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Leipzig, 2016, p. 7</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_RBJM8IFQ">DE_Leipzig_BA_DigitalHumanities_2016.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6RTRIMJ2" class="item document">
+			<h2>Masterstudiengang Speech and Language Processing</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Konstanz</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>6.3.2023, 10:36:32</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 10:29:34</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_7RQ2YHBF">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6RTRIMJ2%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6RTRIMJ2%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Masterstudiengang%20Speech%20and%20Language%20Processing%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Konstanz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 10:27:57)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FH7YN3TB5%22%2C%22annotationKey%22%3A%22VBQFK8FI%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%223%22%2C%22position%22%3A%7B%22pageIndex%22%3A2%2C%22rects%22%3A%5B%5B76.32%2C381.08%2C185.929%2C392.12%5D%2C%5B76.32%2C368.48%2C187.694%2C385.76%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6RTRIMJ2%22%5D%2C%22locator%22%3A%223%22%7D%7D">"Practical/Experimental Research or Internship"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F6RTRIMJ2%22%5D%2C%22locator%22%3A%223%22%2C%22itemData%22%3A%7B%22id%22%3A69741%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Masterstudiengang%20Speech%20and%20Language%20Processing%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Universit%C3%A4t%20Konstanz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222017%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Konstanz, 2017, p. 3</span>)</span></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_H7YN3TB5">DE_Konstanz_MA_SpeechAndLanguageProcessing_2017.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HMKJEZWQ" class="item document">
+			<h2>Master Studienfach - Digital Humanities</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Universität Basel</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>6.3.2023, 10:44:48</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>17.5.2023, 14:00:14</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_IW7GA5D2">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMKJEZWQ%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMKJEZWQ%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Master%20Studienfach%20-%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20Basel%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222023%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:26:49)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FR6SF5HEM%22%2C%22annotationKey%22%3A%2276ZZVJJU%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%225%22%2C%22position%22%3A%7B%22pageIndex%22%3A4%2C%22rects%22%3A%5B%5B104.882%2C195.024%2C515.398%2C204.936%5D%2C%5B104.882%2C184.19%2C543.126%2C194.102%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMKJEZWQ%22%5D%2C%22locator%22%3A%225%22%7D%7D">"Lernziele Kompetenz, ein kleines Informatikprojekt effizient und effektiv durchzuführen. Inhalt Begleitete Durchführung kleiner Programmierprojekte zu eine selbstgewählten Thema"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FHMKJEZWQ%22%5D%2C%22locator%22%3A%225%22%2C%22itemData%22%3A%7B%22id%22%3A69744%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Master%20Studienfach%20-%20Digital%20Humanities%22%2C%22author%22%3A%5B%7B%22family%22%3A%22Universit%C3%A4t%20Basel%22%2C%22given%22%3A%22%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222023%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Universität Basel, 2023, p. 5</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_R6SF5HEM">CH_Basel_MA_DigitalHumanities_2023.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UFK6SUUC" class="item document">
+			<h2>Linguistic and Literary Computing Master of Arts</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Technische Universität Darmstadt</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.4.2020, 21:55:22</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 14:52:24</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_HQY9KYII">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUFK6SUUC%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUFK6SUUC%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Linguistic%20and%20Literary%20Computing%20Master%20of%20Arts%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Darmstadt%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 14:52:15)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FKBXYAC38%22%2C%22annotationKey%22%3A%22M4U72SQF%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2213%22%2C%22position%22%3A%7B%22pageIndex%22%3A12%2C%22rects%22%3A%5B%5B88.275%2C570.226%2C135.003%2C583.654%5D%2C%5B88.275%2C554.966%2C525.123%2C568.394%5D%2C%5B88.275%2C541.446%2C555.852%2C554.874%5D%2C%5B88.275%2C527.946%2C477.24%2C541.374%5D%2C%5B63.775%2C493.696%2C251.801%2C507.124%5D%2C%5B88.275%2C478.196%2C178.761%2C491.624%5D%2C%5B88.275%2C462.946%2C319.697%2C476.374%5D%2C%5B88.275%2C447.426%2C268.239%2C460.854%5D%2C%5B88.275%2C431.926%2C364.654%2C445.354%5D%2C%5B88.275%2C416.426%2C408.071%2C429.854%5D%2C%5B88.275%2C400.926%2C371.925%2C414.354%5D%2C%5B88.275%2C385.676%2C329.267%2C399.104%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUFK6SUUC%22%5D%2C%22locator%22%3A%2213%22%7D%7D">"Lerninhalt Selbstständige, durch die Dozenten des Studienganges betreute Forschung und Bearbeitung eines Projekts zu einem Thema nach Wahl aus einem der folgenden Schwerpunktgebiete: Computerphilologie, Digitale Literaturwissenschaft, Korpus- und Computerlinguistik, oder Digitale Linguistik. 3 Qualifikationsziele / Lernergebnisse Studierende können • Forschungsfragen formulieren und strukturieren • neue Schlussfolgerungen verteidigen • selbstständig Forschungspläne aufstellen und durchführen • (wo notwendig) andere Disziplinen in eigene Forschung einbeziehen • mit der Veränderlichkeit des Forschungsprozesses umgehen • darauf aufbauend den Forschungsprozess steuern."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUFK6SUUC%22%5D%2C%22locator%22%3A%2213%22%2C%22itemData%22%3A%7B%22id%22%3A7601%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Linguistic%20and%20Literary%20Computing%20Master%20of%20Arts%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Darmstadt%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Darmstadt, 2019, p. 13</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_KBXYAC38">DE_Darmstadt_MA_LinguisticAndLiteraryComputing_2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QQJ4AB2B" class="item document">
+			<h2>Data and Discourse Studies Master of Arts</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Technische Universität Darmstadt</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.gugw.tu-darmstadt.de/media/gugw/studienbuero/po_2019/mhb_po_2019/MHB-MA-Data-and-Discourse-Studies-2019.pdf">https://www.gugw.tu-darmstadt.de/media/gugw/studienbuero/po_2019/mhb_po_2019/MHB-MA-Data-and-Discourse-Studies-2019.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 14:53:25</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>18.9.2023, 15:15:31</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>kategorisiert</li>
+					<li>Modulhandbuch</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_MLFC9QW6">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FQQJ4AB2B%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FQQJ4AB2B%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22DE_Darmstadt_MA_DataAndDiscourse_2019.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Darmstadt%22%7D%5D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:25:50)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FGPAWNXJR%22%2C%22annotationKey%22%3A%224S9TXH5H%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2225%22%2C%22position%22%3A%7B%22pageIndex%22%3A24%2C%22rects%22%3A%5B%5B168.08%2C188.614%2C306.72%2C201.071%5D%2C%5B168.08%2C176.614%2C210.6%2C200.821%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FQQJ4AB2B%22%5D%2C%22locator%22%3A%2225%22%7D%7D">"Discourse Analysis Project (guided self-study)"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FQQJ4AB2B%22%5D%2C%22locator%22%3A%2225%22%2C%22itemData%22%3A%7B%22id%22%3A75603%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Data%20and%20Discourse%20Studies%20Master%20of%20Arts%22%2C%22URL%22%3A%22https%3A%2F%2Fwww.gugw.tu-darmstadt.de%2Fmedia%2Fgugw%2Fstudienbuero%2Fpo_2019%2Fmhb_po_2019%2FMHB-MA-Data-and-Discourse-Studies-2019.pdf%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Darmstadt%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222019%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Darmstadt, p. 25</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_GPAWNXJR">DE_Darmstadt_MA_DataAndDiscourse_2019.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_7I3R9DIH" class="item document">
+			<h2>Informatik für Geistes- und Sozialwissenschaftler mit dem Abschluss Master of Science (M.Sc.)</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Technische Universität Chemnitz</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>16.5.2023, 16:59:59</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>16.5.2023, 17:01:48</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_XZE22H5Z">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F7I3R9DIH%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F7I3R9DIH%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Informatik%20f%C3%BCr%20Geistes-%20und%20Sozialwissenschaftler%20mit%20dem%20Abschluss%20Master%20of%20Science%20(M.Sc.)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Chemnitz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(16.5.2023, 17:02:44)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FUFHJPFDQ%22%2C%22annotationKey%22%3A%22FFGCKTQR%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%22918%22%2C%22position%22%3A%7B%22pageIndex%22%3A49%2C%22rects%22%3A%5B%5B217.2%2C513.688%2C461.245%2C525.36%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F7I3R9DIH%22%5D%2C%22locator%22%3A%22918%22%7D%7D">"Lehrformen des Moduls sind Vorlesung und Praktikum."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F7I3R9DIH%22%5D%2C%22locator%22%3A%22918%22%2C%22itemData%22%3A%7B%22id%22%3A75623%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Informatik%20f%C3%BCr%20Geistes-%20und%20Sozialwissenschaftler%20mit%20dem%20Abschluss%20Master%20of%20Science%20(M.Sc.)%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Technische%20Universit%C3%A4t%20Chemnitz%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Technische Universität Chemnitz, 2021, p. 918</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_UFHJPFDQ">DE_Chemnitz_MA_InfoGeistesSozialwissenschaftler_2021.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_VY2V4KI7" class="item document">
+			<h2>Modulverzeichnis für den Bachelor-Teilstudiengang &quot;Digital Humanities&quot;</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Georg-August-Universität Göttingen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:24:14</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:26:14</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_82DPQDV2">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVY2V4KI7%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVY2V4KI7%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20f%C3%BCr%20den%20Bachelor-Teilstudiengang%20%5C%22Digital%20Humanities%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:30:29)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FS3LEKT6U%22%2C%22annotationKey%22%3A%22EFF9KARL%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2215561%22%2C%22position%22%3A%7B%22pageIndex%22%3A30%2C%22rects%22%3A%5B%5B59.192%2C473.169%2C360.992%2C483.169%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVY2V4KI7%22%5D%2C%22locator%22%3A%2215561%22%7D%7D">"erfolgreiche digitale Umsetzung einer gestellten Forschungsaufgabe"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FVY2V4KI7%22%5D%2C%22locator%22%3A%2215561%22%2C%22itemData%22%3A%7B%22id%22%3A75718%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulverzeichnis%20f%C3%BCr%20den%20Bachelor-Teilstudiengang%20%5C%22Digital%20Humanities%5C%22%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Georg-August-Universit%C3%A4t%20G%C3%B6ttingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Georg-August-Universität Göttingen, 2021, p. 15561</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_S3LEKT6U">DE_Göttingen_BA_DigitalHumanities_2021.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_PV5DVAEK" class="item document">
+			<h2>Fachstudien- und Prüfungsordnung für das Fach Computerlinguistik im Zwei-Fach-Bachelorstudiengang</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Friedrich-Alexander-Universität Erlangen-Nürnberg</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:36:48</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:37:49</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_AD7PG7TE">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FPV5DVAEK%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FPV5DVAEK%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Fachstudien-%20und%20Pr%C3%BCfungsordnung%20f%C3%BCr%20das%20Fach%20Computerlinguistik%20im%20Zwei-Fach-Bachelorstudiengang%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Friedrich-Alexander-Universit%C3%A4t%20Erlangen-N%C3%BCrnberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:29:56)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FWVX8E9SC%22%2C%22annotationKey%22%3A%22UQWPE3SB%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%224%22%2C%22position%22%3A%7B%22pageIndex%22%3A3%2C%22rects%22%3A%5B%5B253.49%2C205.722%2C306.892%2C219.366%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FPV5DVAEK%22%5D%2C%22locator%22%3A%224%22%7D%7D">"Projektseminar"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2FPV5DVAEK%22%5D%2C%22locator%22%3A%224%22%2C%22itemData%22%3A%7B%22id%22%3A75730%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Fachstudien-%20und%20Pr%C3%BCfungsordnung%20f%C3%BCr%20das%20Fach%20Computerlinguistik%20im%20Zwei-Fach-Bachelorstudiengang%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Friedrich-Alexander-Universit%C3%A4t%20Erlangen-N%C3%BCrnberg%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222022%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Friedrich-Alexander-Universität Erlangen-Nürnberg, 2022, p. 4</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_WVX8E9SC">DE_Erlangen_BA_Computerlinguistik(ehmLinformatik)_2022.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2L92HD74" class="item document">
+			<h2>Modulhandbuch Computational Linguistics BA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Eberhard Karls Universität Tübingen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:01:55</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:08:30</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_AQVNK6CX">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computational%20Linguistics%20BA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Eberhard%20Karls%20Universit%C3%A4t%20T%C3%BCbingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(6.6.2023, 14:31:15)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QHWL5KD%22%2C%22annotationKey%22%3A%22QZ4IHFM9%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B284.176%2C491.864%2C370.67%2C507.776%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%5D%2C%22locator%22%3A%2214%22%7D%7D">"Programmierprojekte,"</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%5D%2C%22locator%22%3A%2214%22%2C%22itemData%22%3A%7B%22id%22%3A75696%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computational%20Linguistics%20BA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Eberhard%20Karls%20Universit%C3%A4t%20T%C3%BCbingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Eberhard Karls Universität Tübingen, 2021, p. 14</span>)</span></p><p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3QHWL5KD%22%2C%22annotationKey%22%3A%22YJXV7ACV%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2214%22%2C%22position%22%3A%7B%22pageIndex%22%3A13%2C%22rects%22%3A%5B%5B430.264%2C289.747%2C509.323%2C299.936%5D%2C%5B189.6%2C279.187%2C406.826%2C289.376%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%5D%2C%22locator%22%3A%2214%22%7D%7D">"In diesem Kurs wird insbesondere auch die Arbeit in Projektgruppen geübt."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F2L92HD74%22%5D%2C%22locator%22%3A%2214%22%2C%22itemData%22%3A%7B%22id%22%3A75696%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computational%20Linguistics%20BA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Eberhard%20Karls%20Universit%C3%A4t%20T%C3%BCbingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Eberhard Karls Universität Tübingen, 2021, p. 14</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_3QHWL5KD">DE_Tübingen_BA_Computerlinguistik_2021.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_36CWB97F" class="item document">
+			<h2>Modulhandbuch Computerlinguistik MA</h2>
+				<table>
+					<tr>
+						<th>Typ</th>
+						<td>Dokument</td>
+					</tr>
+					<tr>
+						<th class="author">Autor</th>
+						<td>Eberhard Karls Universität Tübingen</td>
+					</tr>
+					<tr>
+					<th>Datum</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Hinzugefügt am</th>
+						<td>2.6.2023, 17:02:00</td>
+					</tr>
+					<tr>
+					<th>Geändert am</th>
+						<td>2.6.2023, 17:10:15</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Modulhandbuch</li>
+					<li>kategorisiert</li>
+				</ul>
+				<h3 class="notes">Notizen:</h3>
+				<ul class="notes">
+					<li id="item_6SCHX4ED">
+<div><div data-citation-items="%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36CWB97F%22%5D%2C%22itemData%22%3A%7B%22id%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36CWB97F%22%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20MA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Eberhard%20Karls%20Universit%C3%A4t%20T%C3%BCbingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D" data-schema-version="8"><h1>Anmerkungen<br>(2.6.2023, 17:10:07)</h1>
+<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F3RQK4LFL%22%2C%22annotationKey%22%3A%22XR4EAGP6%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%2216%22%2C%22position%22%3A%7B%22pageIndex%22%3A15%2C%22rects%22%3A%5B%5B168.96%2C341.107%2C526.773%2C351.296%5D%2C%5B168.96%2C330.547%2C526.681%2C340.736%5D%2C%5B168.96%2C320.227%2C526.724%2C330.416%5D%2C%5B168.96%2C309.907%2C526.751%2C320.096%5D%2C%5B168.96%2C299.587%2C383.584%2C309.776%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36CWB97F%22%5D%2C%22locator%22%3A%2216%22%7D%7D">"Für Absolventen des Praktikums, Erfahrung im erfolgreichen Einbringen theoretisch erlernter Kompetenzen im praktischen Umfeld, Arbeit im Team, und lösungsorientiertes Arbeiten. Alternativ Vertiefung der Breite und Tiefe des Verständnisses des interdisziplinären Kontexts der Computerlinguistik. Die Studierenden sind in der Lage, den Inhalt des Praktikums zu reflektieren und schriftlich darzustellen."</span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fgroups%2F2449549%2Fitems%2F36CWB97F%22%5D%2C%22locator%22%3A%2216%22%2C%22itemData%22%3A%7B%22id%22%3A75697%2C%22type%22%3A%22document%22%2C%22title%22%3A%22Modulhandbuch%20Computerlinguistik%20MA%22%2C%22author%22%3A%5B%7B%22literal%22%3A%22Eberhard%20Karls%20Universit%C3%A4t%20T%C3%BCbingen%22%7D%5D%2C%22issued%22%3A%7B%22date-parts%22%3A%5B%5B%222021%22%5D%5D%7D%7D%7D%5D%2C%22properties%22%3A%7B%7D%7D">(<span class="citation-item">Eberhard Karls Universität Tübingen, 2021, p. 16</span>)</span></p></div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Anhänge</h3>
+				<ul class="attachments">
+					<li id="item_3RQK4LFL">DE_Tübingen_MA_Computerlinguistik_2021.pdf					</li>
+				</ul>
+			</li>
+
+		</ul>
+	</body>
+</html>
